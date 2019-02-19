@@ -1,0 +1,115 @@
+*
+*
+*
+@author: Mohit Nainwal
+*
+*
+*IT|FR|ES|EN|DE
+
+
+INDUSTRIES
+SOLUTIONS
+PRODUCTS
+COMPANY
+What is Machine Learning? A definition
+Home » Blog » Machine learning » What is Machine Learning? A definition
+What is Machine Learning? A definition
+ Machine learning
+What is Machine Learning? A definition
+Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.
+
+The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions accordingly.
+
+Some machine learning methods
+Machine learning algorithms are often categorized as supervised or unsupervised.
+
+Supervised machine learning algorithms can apply what has been learned in the past to new data using labeled examples to predict future events. Starting from the analysis of a known training dataset, the learning algorithm produces an inferred function to make predictions about the output values. The system is able to provide targets for any new input after sufficient training. The learning algorithm can also compare its output with the correct, intended output and find errors in order to modify the model accordingly.
+In contrast, unsupervised machine learning algorithms are used when the information used to train is neither classified nor labeled. Unsupervised learning studies how systems can infer a function to describe a hidden structure from unlabeled data. The system doesn’t figure out the right output, but it explores the data and can draw inferences from datasets to describe hidden structures from unlabeled data.
+Semi-supervised machine learning algorithms fall somewhere in between supervised and unsupervised learning, since they use both labeled and unlabeled data for training – typically a small amount of labeled data and a large amount of unlabeled data. The systems that use this method are able to considerably improve learning accuracy. Usually, semi-supervised learning is chosen when the acquired labeled data requires skilled and relevant resources in order to train it / learn from it. Otherwise, acquiringunlabeled data generally doesn’t require additional resources.
+Reinforcement machine learning algorithms is a learning method that interacts with its environment by producing actions and discovers errors or rewards. Trial and error search and delayed reward are the most relevant characteristics of reinforcement learning. This method allows machines and software agents to automatically determine the ideal behavior within a specific context in order to maximize its performance. Simple reward feedback is required for the agent to learn which action is best; this is known as the reinforcement signal.
+Machine learning enables analysis of massive quantities of data. While it generally delivers faster, more accurate results in order to identify profitable opportunities or dangerous risks, it may also require additional time and resources to train it properly. Combining machine learning with AI and cognitive technologies can make it even more effective in processing large volumes of information.
+
+Expert System Team
+Expert System Team
+Our team of IT marketing professionals and digital enthusiasts are passionate about semantic technology and cognitive computing and how it will transform our world. We’ll keep you posted on the latest Expert System products, solutions and services, and share the most interesting information on semantics, cognitive computing and AI from around the web, and from our rich library of white papers, customer case studies and more.
+
+BLOGGERS
+ Marco Varone
+ Daniel Mayer
+ Andrea Melegari
+ Marketing Staff
+CATEGORIES
+Machine learning
+Artificial Intelligence
+Knowledge management
+Social media monitorning
+Cognitive computing
+NLP
+Enitity Extraction
+Robotic Process Automation
+Customer Support & Chatbot
+Corporate Intelligence
+Automatic Classification
+Risk Mitigation
+OSINT
+INDUSTRIES
+Banking & Insurance
+Defence & Intelligence
+Public Administration
+Life Science & Pharma
+Oil & Gas
+Media & Publishing
+Others
+ARCHIVE
+► 2019
+► 2018
+► 2017
+► 2016
+► 2015
+► 2014
+► 2013
+► 2012
+► 2011
+► 2010
+► 2009
+► 2008
+► 2007
+► 2006
+► 2005
+► 2004
+ Want to learn more?
+COGITO TECHNOLOGY – DON’T SETTLE FOR LESS THAN TRUE AI
+
+LATEST TWEET
+View image on Twitter
+View image on Twitter
+
+Expert System
+@Expert_System
+ “By 2020 customers will manage 85% of their relationship with the enterprise without interacting with a human”, @Gartner_inc 
+Consumers love #chatbots, companies benefit from them #deeplearning #machinelearning #NLP #AI https://www.expertsystem.com/deep-learning-for-chatbot/ …
+
+1
+8:03 PM - Jan 30, 2019
+See Expert System's other Tweets
+Twitter Ads info and privacy
+BLOG
+As for Types of Chatbots: Deep Learning for Chatbot
+January 30, 2019
+Natural Language Understanding: What is it and how is it different from NLP
+January 22, 2019
+The New Digital Customer Experience, AMLD, Lausanne, 26-29 January 2019
+January 21, 2019
+ INVESTOR RELATIONS
+ NEWS
+ RESOURCES
+ DEMO
+ VIDEO
+ EXPERT IQ REPORTS
+ NEWSLETTER
+Copyright © 2018 Expert System S.p.A. | P.I. 02608970360
+CONTACT
+PRIVACY POLICY
+TERMS OF USE
+COMPANY DATA
+This Website uses third party analytical and profiling cookies to offer services in line with the preferences you reveal while using the Website. If you want to learn more, or want to opt-out of cookies, click here Privacy Policy. If you continue to browse or select any links or options on the Website, you will be deemed as consenting to the use of these cookies.

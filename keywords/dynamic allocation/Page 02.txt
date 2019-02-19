@@ -1,0 +1,115 @@
+ALERT FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager
+Techopedia - Where IT and Business MeetTOPICS WEBINARSDOWNLOADSDICTIONARYTUTORIALSQ & ARESOURCES
+TRENDING:
+VIRTUALIZATION MACHINE LEARNING BIG DATA ENTERPRISE DEVELOPMENT MORE
+ 
+Topics
+Webinars
+Downloads
+Dictionary
+Tutorials
+Q & A
+Resources
+Trending
+More
+Home  Dictionary  Tags  Hardware  Memory 
+Memory Allocation
+Definition - What does Memory Allocation mean?
+Memory allocation is a process by which computer programs and services are assigned with physical or virtual memory space.
+
+Memory allocation is the process of reserving a partial or complete portion of computer memory for the execution of programs and processes. Memory allocation is achieved through a process known as memory management.
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager
+Techopedia explains Memory Allocation
+Memory allocation is primarily a computer hardware operation but is managed through operating system and software applications. Memory allocation process is quite similar in physical and virtual memory management. Programs and services are assigned with a specific memory as per their requirements when they are executed. Once the program has finished its operation or is idle, the memory is released and allocated to another program or merged within the primary memory. 
+
+Memory allocation has two core types;
+
+Static Memory Allocation: The program is allocated memory at compile time.
+Dynamic Memory Allocation: The programs are allocated with memory at run time.
+Share this:   
+Related Terms
+Virtual Memory (VM)
+Memory Management
+16-Bit
+3-D Mouse
+3-D Scanner
+3-D Stereo Technology (S3-D)
+3-D TV
+3D Printer
+3D Printing
+40 Gigabit Ethernet (40GbE)
+Techopedia - Where IT and Business Meet	
+Tech moves fast! Stay ahead of the curve with Techopedia!
+Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
+
+
+Related Articles
+ What is the difference between RAM and ROM? 
+What is the difference between RAM and ROM?
+ Big Data Silos: What They Are and How to Deal With Them 
+Big Data Silos: What They Are and How to Deal With Them
+ 6 Tech Trends That Could Be a Thing in 2019 ... Or Not 
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+ How AI Can Help Tackle Climate Change 
+How AI Can Help Tackle Climate Change
+ Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology 
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+ Job Role: Software Engineer 
+Job Role: Software Engineer
+Featured Q&A
+What is the difference between little endian and big endian data formats?
+How can a hard drive be erased securely?
+What is the difference between a virtual machine and a container?
+More of your questions answered by our Experts
+Related Tags
+HardwareMemoryMicroprocessors
+RESOURCES
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager	FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager:
+Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily.	Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily.:
+New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices	New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices:
+Complimentary Webinar - Getting Control of Your BYOD Program with UEM	Complimentary Webinar - Getting Control of Your BYOD Program with UEM:
+Systems Monitoring for Dummies	Systems Monitoring for Dummies:
+What's really going on in that Cisco ASA of yours?	What's really going on in that Cisco ASA of yours?:
+E-Book:  Compliance is Not Enough: Planning a Complete Security Strategy	E-Book: Compliance is Not Enough: Planning a Complete Security Strategy:
+LATEST ARTICLES
+ Big Data Silos: What They Are and How to Deal With Them 	
+Big Data Silos: What They Are and How to Deal With Them
+ 6 Tech Trends That Could Be a Thing in 2019 ... Or Not 	
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+ How AI Can Help Tackle Climate Change 	
+How AI Can Help Tackle Climate Change
+ Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology 	
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+ Job Role: Software Engineer 	
+Job Role: Software Engineer
+ABOUT
+About
+Advertising Info
+Contact Us
+Write for Us
+CONTENT
+Topics
+Dictionary
+Q&A
+Tutorials
+TOPICS
+Cloud Computing
+Security
+Big Data
+Online Privacy
+Machine Learning
+IT Business
+Data Management
+All Topics
+CONNECT
+ Facebook
+ Twitter
+ LinkedIn
+ Feed
+MORE
+Webinars
+Downloads
+Newsletters
+Techopedia Terms:    #    A    B    C    D    E    F    G    H    I    J    K    L    M    N    O    P    Q    R    S    T    U    V    W    X    Y    Z   
+
+Copyright © 2019 Techopedia Inc. - Terms of Use - Privacy Policy

@@ -1,0 +1,197 @@
+*
+*
+*
+@author: Mohit Nainwal
+*
+*
+*
+Skip to content
+
+    Python
+    PSF
+    Docs
+    PyPI
+    Jobs
+    Community
+
+python™
+Donate
+Search This Site
+
+    Socialize
+
+    About
+    Downloads
+    Documentation
+    Community
+    Success Stories
+    News
+    Events
+
+    >_ Launch Interactive Shell
+
+    # Python 3: Fibonacci series up to n
+    >>> def fib(n):
+    >>>     a, b = 0, 1
+    >>>     while a < n:
+    >>>         print(a, end=' ')
+    >>>         a, b = b, a+b
+    >>>     print()
+    >>> fib(1000)
+    0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987
+
+    Functions Defined
+
+    The core of extensible programming is defining functions. Python allows mandatory and optional arguments, keyword arguments, and even arbitrary argument lists. More about defining functions in Python 3
+
+    1
+    2
+    3
+    4
+    5
+
+Python is a programming language that lets you work quickly and integrate systems more effectively. Learn More
+Get Started
+
+Whether you're new to programming or an experienced developer, it's easy to learn and use Python.
+
+Start with our Beginner’s Guide
+Download
+
+Python source code and installers are available for download for all versions!
+
+Latest: Python 3.7.2
+Docs
+
+Documentation for Python's standard library, along with tutorials and guides, are available online.
+
+docs.python.org
+Jobs
+
+Looking for work or have a Python related position that you're trying to hire for? Our relaunched community-run job board is the place to go.
+
+jobs.python.org
+Latest News
+
+More
+
+    2019-01-24
+    The Python Software Foundation Board Committee for Python in Education ...
+    2019-01-22
+    It's a new year and we are happy to announce ...
+    2019-01-09
+    Happy New Year from the PSF! We’d like to highlight ...
+    2018-12-24
+    Python 3.7.2 and 3.6.8 are now available.  Python 3.7.2 is the next maintenance release ...
+    2018-12-24
+    Python 3.7.2 and 3.6.8 are now available.  Python 3.7.2 is the next maintenance release ...
+
+Upcoming Events
+
+More
+
+    2019-02-02
+    FOSDEM 2019
+    2019-02-09
+    DjangoGirls Bangalore
+    2019-02-09
+    PyTennessee 2019
+    2019-02-15
+    PyCon Belarus 2019
+    2019-02-19
+    PyCon Namibia 2019
+
+Success Stories
+
+More
+
+    How we used Python to automate a problem that occurred infrequently, but was a huge nuisance when it did occur. 
+
+Using Python to Automate Tedious Tasks by Nat Dunn
+Use Python for…
+
+More
+
+    Web Development: Django, Pyramid, Bottle, Tornado, Flask, web2py
+    GUI Development: tkInter, PyGObject, PyQt, PySide, Kivy, wxPython
+    Scientific and Numeric: SciPy, Pandas, IPython
+    Software Development: Buildbot, Trac, Roundup
+    System Administration: Ansible, Salt, OpenStack
+
+>>> Python Enhancement Proposals: The future of Python
+RSS
+>>> Python Software Foundation
+
+The mission of the Python Software Foundation is to promote, protect, and advance the Python programming language, and to support and facilitate the growth of a diverse and international community of Python programmers. Learn more
+
+Become a Member Donate to the PSF
+
+    About
+        Applications
+        Quotes
+        Getting Started
+        Help
+        Python Brochure
+    Downloads
+        All releases
+        Source code
+        Windows
+        Mac OS X
+        Other Platforms
+        License
+        Alternative Implementations
+    Documentation
+        Docs
+        Audio/Visual Talks
+        Beginner's Guide
+        Developer's Guide
+        FAQ
+        Non-English Docs
+        PEP Index
+        Python Books
+        Python Essays
+    Community
+        Community Survey
+        Diversity
+        Mailing Lists
+        IRC
+        Forums
+        Python Conferences
+        Special Interest Groups
+        Python Logo
+        Python Wiki
+        Merchandise
+        Community Awards
+        Code of Conduct
+    Success Stories
+        Arts
+        Business
+        Education
+        Engineering
+        Government
+        Scientific
+        Software Development
+    News
+        Python News
+        Community News
+        PSF News
+        PyCon News
+    Events
+        Python Events
+        User Group Events
+        Python Events Archive
+        User Group Events Archive
+        Submit an Event
+    Contributing
+        Developer's Guide
+        Issue Tracker
+        python-dev list
+        Core Mentorship
+        Report a Security Issue
+
+    Help & General Contact
+    Diversity Initiatives
+    Submit Website Bug
+    Status
+
+Copyright ©2001-2019.  Python Software Foundation  Legal Statements  Privacy Policy  Powered by Rackspace

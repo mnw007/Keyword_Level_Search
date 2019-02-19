@@ -1,0 +1,103 @@
+×
+EdX and its Members use cookies and other tracking technologies for performance, analytics, and marketing purposes. By using this website, you accept this use. Learn more about these technologies in the Privacy Policy.
+Skip to main content
+edX Home Page
+CoursesCourses menuPrograms & DegreesPrograms & Degrees menuSchools & PartnersedX for Business
+Search:Submit a course search
+Sign InRegister
+You are here
+Home > All Subjects > Computer Science > Machine Learning
+Machine Learning
+Machine Learning
+Master the essentials of machine learning and algorithms to help improve learning from data without human intervention.
+
+Columbia University Logo
+Archived
+Future Dates To Be Announced (View a list ofmore dates)
+Enroll Now, Machine Learning
+I would like to receive email from Columbia University and learn about other offerings related to Machine Learning.
+
+This course is part of a MicroMasters Program
+
+About this course Skip Course Description
+Machine Learning is the basis for the most exciting careers in data analysis today. You’ll learn the models and methods and apply them to real world situations ranging from identifying trending news topics, to building recommendation engines, ranking sports teams and plotting the path of movie zombies.
+
+Major perspectives covered include:
+
+probabilistic versus non-probabilistic modeling
+supervised versus unsupervised learning
+Topics include: classification and regression, clustering methods, sequential models, matrix factorization, topic modeling and model selection.
+
+Methods include: linear and logistic regression, support vector machines, tree classifiers, boosting, maximum likelihood and MAP inference, EM algorithm, hidden Markov models, Kalman filters, k-means, Gaussian mixture models, among others.
+
+In the first half of the course we will cover supervised learning techniques for regression and classification. In this framework, we possess an output or response that we wish to predict based on a set of inputs. We will discuss several fundamental methods for performing this task and algorithms for their optimization. Our approach will be more practically motivated, meaning we will fully develop a mathematical understanding of the respective algorithms, but we will only briefly touch on abstract learning theory.
+
+In the second half of the course we shift to unsupervised learning techniques. In these problems the end goal less clear-cut than predicting an output based on a corresponding input. We will cover three fundamental problems of unsupervised learning: data clustering, matrix factorization, and sequential models for order-dependent data. Some applications of these models include object recommendation and topic modeling.
+
+This course is part of a MicroMasters program. If you complete all courses in the MicroMasters program in 2018, GE will guarantee you an interview in Boston for an internship or full-time role. Open to Massachusetts residents only.
+
+What you'll learn
+Supervised learning techniques for regression and classification
+Unsupervised learning techniques for data modeling and analysis
+Probabilistic versus non-probabilistic viewpoints
+Optimization and inference algorithms for model learning
+ View Course Syllabus
+
+Skip Syllabus Description
+
+
+
+
+
+
+
+
+
+
+Meet the instructor
+bio for Professor John W. Paisley 
+Professor John W. Paisley
+
+Department of Electrical Engineering
+Columbia University
+Learner Testimonial
+“Professor John Paisley was excellent in every respect. He has deep knowledge of both the theory and practice of machine learning, and was able to successfully impart some of it on us very effectively. I really enjoyed this class. It was tough, but it was worth the effort and I learned a ton!”
+-- Previous student
+ 
+
+Frequently Asked Questions
+Who Can Take This Course? 
+
+Unfortunately, learners from Iran and Cuba will not be able to register for this course. While edX has received licenses from the U.S. Office of Foreign Assets Control (OFAC) to offer courses to learners from these countries, our licenses do not cover this course. EdX truly regrets that US sanctions prevent us from offering all of our courses to everyone, no matter where they live.
+
+edX Home Page
+Choose Language  
+edX
+About
+edX for Business
+Affiliates
+Open edX
+Careers
+News
+Legal
+Terms of Service & Honor Code
+Privacy Policy
+Accessibility Policy
+Trademark Policy
+Sitemap
+Connect
+Blog
+Contact Us
+Help Center
+Media Kit
+Donate
+Like edX on Facebook
+Follow edX on Twitter
+Subscribe to the edX YouTube channel
+Follow edX on LinkedIn
+Follow edX on Google+
+Subscribe to the edX subreddit
+ Download the edX mobile app from the Apple App Store
+ Download the edX mobile app from Google Play
+© 2012–2019 edX Inc. 
+EdX, Open edX, and MicroMasters are registered trademarks of edX Inc. | 粤ICP备17044299号-2

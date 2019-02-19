@@ -1,0 +1,34 @@
+In general, data is any set of characters that has been gathered and translated for some purpose, usually analysis. It can be any character, including text and numbers, pictures, sound, or video. If data is not put into context, it doesn't do anything to a human or computer.
+
+Within a computer's storage, data is a collection of numbers represented as bytes that are in turn composed of bits (binary digits) that can have the value one or zero. Data is processed by the CPU, which uses logical operations to produce new data (output) from source data (input).
+
+    Examples of computer data
+    How is data stored on a computer?
+    Mobile data
+    Grammatical usage
+    Related data pages.
+
+Examples of computer data
+
+Joe,Smith, 1234 Circle,SLC,UT,8404,8015553211
+
+0143 0157 0155 0160 0165 0164 0145 0162 0040 0150 0157 0160 0145
+
+01100011011011110110110101110000011101010111010001100101011100100010000001101000000101
+
+How is data stored on a computer?
+
+Data and Information are typically stored on a computer using a hard drive or another storage device.
+Mobile data
+
+With smartphones and other mobile devices, data is a term used to describe any data transmitted over the Internet wirelessly by the device. See our data plan definition for further information.
+Grammatical usage
+
+The word data is technically a plural noun, as in, "The data are being processed." The singular form of data is datum, from the Latin word meaning "something given."
+
+While using data as a plural noun is technically correct, in modern usage, data is also accepted as a singular noun, as in, "The data is being processed."
+Related data pages
+
+    What is the difference between data and information?
+
+Artificial intelligence terms, Data acquisition, Data manipulation, Data mining, Data processing, Data recovery, Database terms, Information, Instruction, Massage, Raw data, Sanitized data, Source data, Spreadsheet terms

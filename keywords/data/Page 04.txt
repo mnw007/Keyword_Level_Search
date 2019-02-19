@@ -1,0 +1,10 @@
+Data
+
+Computer data is information processed or stored by a computer. This information may be in the form of text documents, images, audio clips, software programs, or other types of data. Computer data may be processed by the computer's CPU and is stored in files and folders on the computer's hard disk.
+
+At its most rudimentary level, computer data is a bunch of ones and zeros, known as binary data. Because all computer data is in binary format, it can be created, processed, saved, and stored digitally. This allows data to be transferred from one computer to another using a network connection or various media devices. It also does not deteriorate over time or lose quality after being used multiple times.
+TechTerms - The Tech Terms Computer Dictionary
+
+This page contains a technical definition of Data. It explains in computing terminology what Data means and is one of many computing terms in the TechTerms dictionary.
+
+All definitions on the TechTerms website are written to be technically accurate but also easy to understand. If you find this Data definition to be helpful, you can reference it using the citation links above. If you think a term should be updated or added to the TechTerms dictionary, please email TechTerms!

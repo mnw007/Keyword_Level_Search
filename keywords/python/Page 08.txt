@@ -1,0 +1,114 @@
+
+
+    Codecademy logo
+    Community
+    Catalog
+    Pricing
+
+New and Improved! Check out the new Python 3 course for Codecademy’s most up-to-date Python curriculum.
+Learn Python 2
+
+Learn the basics of the world's fastest growing and most popular programming language used by software engineers, analysts, data scientists, and machine learning engineers alike.
+Python Illustration
+
+    Overview
+    Syllabus
+
+Why Learn Python?
+
+Python is a general-purpose, versatile and popular programming language. It's great as a first language because it is concise and easy to read, and it is also a good language to have in any programmer's stack as it can be used for everything from web development to software development and scientific applications.
+Take-Away Skills:
+
+This course is a great introduction to both fundamental programming concepts and the Python programming language. By the end, you'll be comfortable programming in Python and taking your skills off the Codecademy platform and onto your own computer.
+
+Join4,318,472people who have taken this course
+
+Time to Complete
+    25 Hours
+Prerequisites
+    None
+
+Codecademy courses have been taken by employees at
+Google LogoFacebook LogoNASA LogoIBM LogoDropbox LogoQuora Logo
+What you'll learn
+
+    1
+
+In this course, learn about the syntax of the Python programming language!
+2
+
+This course will introduce you to strings and console output in Python.
+3
+
+Learn how to use conditionals and control flow to create programs that generate different outcomes.
+4
+
+Learn how to create and use functions in Python!
+5
+
+In this course, you will learn about the data structures lists and dictionaries.
+
+    + 7 more lessons
+
+What you'll create
+
+Portfolio projects that showcase your new skills
+Pro Logo
+
+    Tip Calculator
+
+    It's time to build fluency in Python fundamentals. In this next Pro Project, we're going to practice syntax in Python so you can hone your skills and feel confident taking them to the real world. Why? You've done a great job so far on your quest to learn Python. Let's build something to solidify your newfound knowledge. What's next? Calculator, tipping, more Python. You got this!
+    Python Mad Libs
+
+    It's time to build fluency in Python fundamentals. In this next Pro Project, we're going to practice inputs and print in Python so you can hone your skills and feel confident taking them to the real world. Why? Being able to take inputs and print results is a key part of programming. What's next? Mad Libs, user inputs, more Python. You got this!
+    Area Calculator
+
+    It's time to build fluency in Python fundamentals. In this next Pro Project, we're going to practice functions and conditionals in Python so you can hone your skills and feel confident taking them to the real world. Why? Ever wanted to automate your math homework? Time to build something in Python that does just that. What's next? Shapes, math, more Python. You got this!
+
+How you'll master it
+
+Stress-test your knowledge with quizzes that help commit syntax to memory
+Pro Logo
+
+    Python Syntax
+
+    Strings and Console Output
+
+    Conditionals and Control Flow
+
+testimonial
+
+    “
+    I know from first-hand experience that you can go in knowing zero, nothing, and just get a grasp on everything as you go and start building right away.
+    ”
+    — Madelyn, Pinterest
+
+Codecademy
+About
+Stories
+We're Hiring
+Catalog
+By Subject
+Full Catalog
+Web Development
+Programming
+Data Science
+Partnerships
+Design
+By Language
+HTML & CSS
+Python
+JavaScript
+Java
+SQL
+Bash/Shell
+Ruby
+C++
+Resources
+Beta Courses
+Articles
+Forums
+Help
+Blog
+Privacy PolicyTerms
+Made in NYC © 2019 Codecademy

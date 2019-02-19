@@ -1,0 +1,222 @@
+
+w3schools.com
+THE WORLD'S LARGEST WEB DEVELOPER SITE
+Python Tutorial
+Python HOME
+Python Intro
+Python Get Started
+Python Syntax
+Python Variables
+Python Numbers
+Python Casting
+Python Strings
+Python Operators
+Python Lists
+Python Tuples
+Python Sets
+Python Dictionaries
+Python If...Else
+Python While Loops
+Python For Loops
+Python Functions
+Python Lambda
+Python Arrays
+Python Classes/Objects
+Python Iterators
+Python Modules
+Python Dates
+Python JSON
+Python RegEx
+Python PIP
+Python Try...Except
+
+File Handling
+Python File Handling
+Python Read Files
+Python Write/Create Files
+Python Delete Files
+
+Python MySQL
+MySQL Get Started
+MySQL Create Database
+MySQL Create Table
+MySQL Insert
+MySQL Select
+MySQL Where
+MySQL Order By
+MySQL Delete
+MySQL Drop Table
+MySQL Update
+MySQL Limit
+MySQL Join
+
+Python MongoDB
+MongoDB Get Started
+MongoDB Create Database
+MongoDB Create Collection
+MongoDB Insert
+MongoDB Find
+MongoDB Query
+MongoDB Sort
+MongoDB Delete
+MongoDB Drop Collection
+MongoDB Update
+MongoDB Limit
+
+Python Reference
+Python Overview
+Python Built-in Functions
+Python String Methods
+Python List Methods
+Python Dictionary Methods
+Python Tuple Methods
+Python Set Methods
+Python Keywords
+
+Python How To
+Remove List Duplicates
+Reverse a String
+
+Python Examples
+Python Examples
+Python Exercises
+
+
+Python Tutorial
+
+Python is a programming language.
+
+Python can be used on a server to create web applications.
+Learning by Examples
+
+Our "Show Python" tool makes it easy to learn Python, it shows both the code and the result.
+Example
+print("Hello, World!")
+
+Click on the "Run example" button to see how it works.
+Python File Handling
+
+In our File Handling section you will learn how to open, read, write, and delete files.
+
+Python File Handling
+Python Database Handling
+
+In our database section you will learn how to access and work with MySQL and MongoDB databases:
+
+Python MySQL Tutorial
+
+Python MongoDB Tutorial
+Python Exercises
+Test Yourself With Exercises
+Exercise:
+
+Insert the missing part of the code below to output "Hello World".
+
+("Hello World")
+
+
+Start the Exercise
+Python Examples
+
+Learn by examples! This tutorial supplements all explanations with clarifying examples.
+
+Python Reference
+
+You will also find complete function and method references:
+
+Reference Overview
+
+Built-in Functions
+
+String Methods
+
+List/Array Methods
+
+Dictionary Methods
+
+Tuple Methods
+
+Set Methods
+
+Python Keywords
+Download Python
+
+Download Python from the official Python web site: https://python.org
+COLOR PICKER
+colorpicker
+HOW TO
+Tabs
+Dropdowns
+Accordions
+Side Navigation
+Top Navigation
+Modal Boxes
+Progress Bars
+Parallax
+Login Form
+HTML Includes
+Google Maps
+Range Sliders
+Tooltips
+Slideshow
+Filter List
+Sort List
+SHARE
+
+
+CERTIFICATES
+
+HTML
+CSS
+JavaScript
+PHP
+jQuery
+Bootstrap
+XML
+Top 10 Tutorials
+HTML Tutorial
+CSS Tutorial
+JavaScript Tutorial
+How To Tutorial
+W3.CSS Tutorial
+Bootstrap Tutorial
+SQL Tutorial
+PHP Tutorial
+jQuery Tutorial
+Python Tutorial
+Top 10 References
+HTML Reference
+CSS Reference
+JavaScript Reference
+W3.CSS Reference
+Bootstrap Reference
+SQL Reference
+PHP Reference
+HTML Colors
+jQuery Reference
+Python Reference
+Top 10 Examples
+HTML Examples
+CSS Examples
+JavaScript Examples
+How To Examples
+W3.CSS Examples
+Bootstrap Examples
+PHP Examples
+jQuery Examples
+Angular Examples
+XML Examples
+Web Certificates
+HTML Certificate
+CSS Certificate
+JavaScript Certificate
+jQuery Certificate
+PHP Certificate
+Bootstrap Certificate
+XML Certificate
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of use, cookie and privacy policy. Copyright 1999-2019 by Refsnes Data. All Rights Reserved.
+Powered by W3.CSS.
+
+W3Schools.com
+
+

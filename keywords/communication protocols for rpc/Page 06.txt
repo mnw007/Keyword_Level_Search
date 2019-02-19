@@ -1,0 +1,112 @@
+TechTargetSearch the TechTarget Network 
+LOGIN REGISTER
+TECHTARGET NETWORKNEWSFEATURESTIPSMORE CONTENT SOFTWARE CONTAINERS
+Search
+Microservices
+TOPIC
+Microservices and development
+SUBTOPIC
+Patterns, platforms and frameworks
+Follow: 
+Essential GuideBrowse Sections
+This content is part of the Essential Guide:
+The world of microservices and container technologies
+DEFINITION
+Remote Procedure Call (RPC)
+
+Posted by: Margaret Rouse
+WhatIs.com
+   
+Contributor(s): Bree Matturro, Phil Bowman and Fred Hazan
+Remote Procedure Call (RPC) is a protocol that one program can use to request a service from a program located in another computer on a network without having to understand the network's details. A procedure call is also sometimes known as a function call or a subroutine call.
+
+DOWNLOAD THIS FREE GUIDE
+
+PDF: Best practices for managing microserivces
+Get ahead of the learning curve, This exclusive microservices handbook includes an objective analysis of the best tips and practices for managing and monitoring microservices architecture.
+
+Corporate E-mail Address:
+
+I agree to TechTarget’s Terms of Use, Privacy Policy, and the transfer of my information to the United States for processing to provide me with relevant information as described in our Privacy Policy.
+
+I agree to my information being processed by TechTarget and its Partners to contact me via phone, email, or other means regarding information relevant to my professional interests. I may unsubscribe at any time.
+RPC uses the client-server model. The requesting program is a client and the service providing program is the server. Like a regular or local procedure call, an RPC is a synchronous operation requiring the requesting program to be suspended until the results of the remote procedure are returned. However, the use of lightweight processes or threads that share the same address space allows multiple RPCs to be performed concurrently.
+
+RPC message procedure
+When program statements that use RPC framework are compiled into an executable program, a stub is included in the compiled code that acts as the representative of the remote procedure code. When the program is run and the procedure call is issued, the stub receives the request and forwards it to a client runtime program in the local computer.
+
+ 
+Explanation of Remote
+Procedure Call.
+The client runtime program has the knowledge of how to address the remote computer and server application and sends the message across the network that requests the remote procedure. Similarly, the server includes a runtime program and stub that interface with the remote procedure itself. Response-request protocols are returned the same way.
+
+RPC models and alternative methods for client-server communication
+There are several RPC models and distributed computing implementations. A popular model and implementation is the Open Software Foundation's Distributed Computing Environment (DCE). The Institute of Electrical and Electronics Engineers defines RPC in its ISO Remote Procedure Call Specification, ISO/IEC CD 11578 N6561, ISO/IEC, November 1991.
+
+RPC spans the transport layer and the application layer in the Open Systems Interconnection model of network communication. RPC makes it easier to develop an application that includes multiple programs distributed in a network.
+
+
+
+Alternative methods for client-server communication include message queueing and IBM's Advanced Program-to-Program Communication.
+
+This was last updated in October 2016
+Continue Reading About Remote Procedure Call (RPC)
+What is the difference between RPC and document type of orientations?
+Causes for unexpected termination of RPCURL
+IT pros top 10 consumerization definitions
+Improve security by hardening Windows
+DSPS, a programming company that specializes in distributed computing, provides an introduction to DCE
+Related Terms
+CSS (cascading style sheets)
+This definition explains the meaning of CSS (cascading style sheets) and how using them with HTML pages is a user interface (UI) ... See complete definition
+Java Development Kit (JDK)
+The Java Development Kit (JDK) provides the foundation upon which all applications that are targeted toward the Java platform are... See complete definition
+streaming data architecture
+A streaming data architecture is an information technology framework that puts the focus on processing data in motion and treats ... See complete definition
+Sponsored News
+4 steps to making better-informed IT investments
+–DellEMC
+Modernize business-critical workloads with intelligence
+–DellEMC
+See More
+Vendor Resources
+Reduce Operation Drag With a Streamlined Approval Process
+–Capriza
+Join the conversation 1 comment
+
+ Send me notifications when other members comment.
+Add My Comment
+Oldest 
+[-] Margaret Rouse - 19 Oct 2016 9:30 AM
+How has RPC protocol improved your enterprise?
+ 
+File Extensions and File Formats
+ABCDEFGHIJKLMNOPQRSTUVWXYZ#
+Latest TechTarget
+resources
+SOFTWARE QUALITY
+CLOUD APPLICATIONS
+AWS
+JAVA
+WINDOWS DEVELOPMENT
+DEVOPSAGENDA
+SearchSoftwareQuality
+Use shift-right testing to cut skepticism, deployment delays
+Production environments are the final frontier for bug hunters. So, embrace -- don't eschew -- shift-right testing. It has the ...
+
+GitHub Enterprise upgrade eases team development
+Enhancements to GitHub Enterprise help enterprise developers schedule, automate and administrate tasks, as the company adjusts ...
+
+Pick up CI/CD, version control in this Azure DevOps tutorial
+Microsoft's rebranded Azure DevOps helps teams take a software project from start to finish. Walk through the service's ...
+
+BACKGROUND IMAGE: iSTOCK/GETTY IMAGES About UsMeet The EditorsContact UsPrivacy PolicyAdvertisersBusiness PartnersMedia KitCorporate SiteContributorsReprintsArchiveSite MapAnswersDefinitionsE-ProductsEventsFeaturesGuidesOpinionsPhoto StoriesQuizzesTipsTutorialsVideos
+All Rights Reserved, Copyright 2001 - 2019, TechTarget
+
+*
+*
+*
+@author: Mohit Nainwal
+*
+*
+*

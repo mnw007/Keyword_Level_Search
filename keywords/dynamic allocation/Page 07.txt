@@ -1,0 +1,225 @@
+We use cookies to ensure you have the best browsing experience on our website. By using our site, you acknowledge that you have read and understood our Cookie Policy & Privacy Policy
+Got it!
+GeeksforGeeks
+	
+
+Login Courses Write an Article
+Skip to content
+ Algo ▼  DS ▼  Languages ▼  Interview ▼  Students ▼  GATE ▼  CS Subjects ▼  Quizzes ▼  GBlog Puzzles Practice
+Sorting a vector in C++
+string find in C++
+Why array index starts from zero ?
+How to return multiple values from a function in C or C++?
+Check if a given graph is Bipartite using DFS
+Applications of Pointers in C/C++
+Pre-increment and Post-increment in C/C++
+static_cast in C++ | Type Casting operators
+“static const” vs “#define” vs “enum”
+Sum of array Elements without using loops and recursion
+Why strcpy and strncpy are not safe to use?
+How to find Segmentation Error in C & C++ ? (Using GDB)
+Memory leak in C++ and How to avoid it?
+Loader in C/C++
+Type Conversion in C++
+Some useful C++ tricks for beginners in Competitive Programming
+GDB (Step by Step Introduction)
+Modulus function in C++ STL
+Passing Reference to a Pointer in C++
+Difference between Call by Value and Call by Reference
+Interesting Facts about C++
+Difference between fundamental data types and derived data types
+#pragma Directive in C/C++
+list insert() in C++ STL
+Types of Operator Overloading in C++
+C++: Methods of code shortening in competitive programming
+Amadeus Labs R & D | On Campus (freshers) | Full time+Internship
+std::any Class in C++
+Measure execution time with high precision in C/C++
+Split a string in equal parts such that all parts are palindromes
+
+perm_identity
+What is Dynamic Memory Allocation?
+Resources are always a premium. We have strived to achieve better utilization of resources at all times; that is the premise of our progress. Related to this pursuit, is the concept of memory allocation.
+
+Memory has to be allocated to the variables that we create, so that actual variables can be brought to existence. Now there is a constraint as how we think it happens, and how it actually happens.
+
+How computer creates a variable?
+When we think of creating something, we think of creating something from the very scratch, while this isn’t what actually happens when a computer creates a variable ‘X’; to the computer, is more like an allocation, the computer just assigns a memory cell from a lot of pre-existing memory cells to X. It’s like someone named ‘RAJESH’ being allocated to a hotel room from a lot of free or empty pre-existing rooms. This example probably made it very clear as how the computer does the allocation of memory.
+
+Now, what is Static Memory Allocation? When we declare variables, we actually are preparing all the variables that will be used, so that the compiler knows that the variable being used is actually an important part of the program that the user wants and not just a rogue symbol floating around. So, when we declare variables, what the compiler actually does is allocate those variables to their rooms (refer to the hotel analogy earlier). Now, if you see, this is being done before the program executes, you can’t allocate variables by this method while the program is executing.
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+// All the variables in below program 
+// are statically allocated. 
+void fun() 
+{ 
+   int a; 
+} 
+int main() 
+{ 
+   int b; 
+   int c[10] 
+} 
+Why do we need to introduce another allocation method of this just gets the job done? Why would we need to allocate memory while the program is executing? Because, even though it isn’t blatantly visible, not being able to allocate memory during run time precludes flexibility and compromises with space efficiency. Specially, those cases where the input isn’t known beforehand, we suffer in terms of inefficient storage use and lack or excess of slots to enter data (given an array or similar data structures to store entries). So, here we define Dynamic Memory Allocation: The mechanism by which storage/memory/cells can be allocated to variables during the run time is called Dynamic Memory Allocation (not to be confused with DMA). So, as we have been going through it all, we can tell that it allocates the memory during the run time which enables us to use as much storage as we want, without worrying about any wastage.
+
+
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+int main() 
+{ 
+   // Below variables are allocated memory 
+   // dynamically. 
+   int *ptr1 = new int; 
+   int *ptr2 = new int[10]; 
+  
+   // Dynamically allocated memory is 
+   // deallocated  
+   delete ptr1; 
+   delete [] ptr2; 
+} 
+There are two types of available memories- stack and heap. Static memory allocation can only be done on stack whereas dynamic memory allocation can be done on both stack and heap. Example of dynamic allocation to be done on stack is recursion where the functions are put into callstack in order of their occurrence and popped off one by one on reaching the base case. Example of dynamic memory allocation on heap is:
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+int main() 
+{ 
+   // Below variables are allocated memory 
+   // dynamically on heap. 
+   int *ptr1 = new int; 
+   int *ptr2 = new int[10]; 
+  
+   // Dynamically allocated memory is 
+   // deallocated  
+   delete ptr1; 
+   delete [] ptr2; 
+} 
+While allocating memory on heap we need to delete the memory manually as memory is not freed( deallocated) by the compiler itself even if the scope of allocated memory finishes( as in case of stack).
+
+To conclude above topic, static memory is something that compiler allocates in advance. While dynamic memory is something that is controlled by the program during execution. Program may ask more of it or may delete some allocated.
+
+
+
+Recommended Posts:
+How to restrict dynamic allocation of objects in C++?
+new and delete operators in C++ for dynamic memory
+C++ Program that will fill whole memory
+Memory leak in C++ and How to avoid it?
+Common Memory/Pointer Related bug in C Programs
+How to create a dynamic 2D array inside a class in C++ ?
+Train a Support Vector Machine to recognize facial features in C++
+unordered_set operators in C++ STL
+Dividing a Large file into Separate Modules in C/C++, Java and Python
+How to delete a range of values from the List using Iterator
+How to create a List with Constructor in C++ STL
+How to delete last element from a List in C++ STL
+Can C++ reference member be declared without being initialized with declaration?
+Finding Floor and Ceil of a Sorted Array using C++ STL
+
+Nishant Chauhan 3
+Check out this Author's contributed articles.
+If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks.
+
+Please Improve this article if you find anything incorrect by clicking on the "Improve Article" button below.
+
+
+
+Improved By : Rupali Chawla, BabisSarantoglou
+
+
+
+Article Tags : C++cpp-pointer
+Practice Tags : CPP
+
+thumb_up
+2
+  
+2.5 
+
+Based on 2 vote(s)
+ FeedbackAdd NotesImprove Article  
+Please write to us at contribute@geeksforgeeks.org to report any issue with the above content.
+Post navigation
+Previous
+first_page Understanding static_assert in C++ 11
+Next
+last_pagefeclearexcept in C++ with Examples
+
+
+
+
+Writing code in comment? Please use ide.geeksforgeeks.org, generate link and share the link here.
+
+
+Load Comments
+Share this post!
+
+Most popular in C++
+Dividing a Large file into Separate Modules in C/C++, Java and Python
+Difference between C and C++
+How does a vector work in C++?
+Is body of a Default Constructor blank in C++?
+How to create a List with Constructor in C++ STL
+
+More related articles in C++
+clock() function in C/C++
+multiset erase() in C++ STL
+C++ vs C#
+C++ Program to concatenate two strings using Operator Overloading
+Print multiples of Unit Digit of Given Number
+
+
+Most visited in C++
+How to delete a range of values from the List using Iterator
+unordered_map count() in C++
+Find sum of a number and its maximum prime factor
+C++ interview questions on virtual function and abstract class
+list unique() in C++ STL
+How to delete last element from a List in C++ STL
+Zero Initialization in C++
+Nested switch statement in C++
+SQL using C/C++ and SQLite
+Finding Floor and Ceil of a Sorted Array using C++ STL
+unordered_map insert in C++ STL
+User defined derived data types in C++
+Similarities between Java and C++
+Different ways to initialize a variable in C/C++
+priority_queue value_type in C++ STL
+
+ GeeksforGeeks
+710-B, Advant Navis Business Park,
+Sector-142, Noida, Uttar Pradesh - 201305
+feedback@geeksforgeeks.org
+COMPANY
+About Us
+Careers
+Privacy Policy
+Contact Us
+LEARN
+Algorithms
+Data Structures
+Languages
+CS Subjects
+Video Tutorials
+PRACTICE
+Company-wise
+Topic-wise
+Contests
+Subjective Questions
+CONTRIBUTE
+Write an Article
+Write Interview Experience
+Internships
+Videos
+    
+@geeksforgeeks, Some rights reserved

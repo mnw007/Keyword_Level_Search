@@ -1,0 +1,84 @@
+LinkedIn SlideShare
+Upload
+Login
+Signup
+Submit Search
+Home  Explore Presentation Courses  PowerPoint Courses  by LinkedIn Learning
+ RPC communication protocol
+Following are different communication protocols used in
+RPC communication:
+1. The request proto...
+
+1 of 24 
+ 
+RPC communication,thread and processes
+398 views
+ Share   Like   Download  ...
+ shraddha mane
+shraddha mane, Bachelor's degree at Bharati Vidyapeeth College of Engineering, Navi Mumbai
+ Follow
+     
+Published on Apr 29, 2017
+
+RPC communication,thread and processes
+
+...
+Published in: Engineering
+ 0 Comments
+ 4 Likes
+ Statistics
+ Notes
+no profile picture user
+
+Post
+Be the first to comment
+
+ RPC communication,thread and processes
+1. RPC communication protocol Following are different communication protocols used in RPC communication: 1. The request protocol (R protocol) 2. The request/reply protocol(RR protocol) 3. The request/reply/acknowledge(RRA protocol)
+2. The R protocol:  In request protocol, the server has nothing to return to the client process. In this protocol, there is no reply or acknowledgement; hence in each call only one message is there, called request message.  The client doesn’t wait after sending the request message as there is no reply expected. It proceeds to its next execution immediately.  The RPC R protocol is also referred as asynchronous RPC.IT helps in improving the performance since client doesn’t need any reply form server, thus reducing network communication overheads.  The working of R protocol is illustrated :  As R protocol is an asynchronous RPC, it is mostly use in the case where periodic updates like clock synchronisation are required.
+3. The RR protocol  In request/reply protocol, the RPC has the arguments and the result as well fitted into a single packet buffer and interval between two calls and its duration is very short.  The server keeps the history of reply messages, so that if client request the same procedure, he server need not to reexecute it, but simply it retransmits the reply and thus reducing execution overhead.
+4. The RRA protocol  To overcome the limitation of RR protocol, the concept of request/reply/acknowledge-reply protocol has been implemented .  The server needs an acknowledge in response to its reply message has been delivered to the client process successfully.  The RRA protocol consists of these messages in each RPC call .  The RRA approach is supposed to be the fully reliable because in RR protocol sometimes the reply messages sent from server may not reach to client and server do not know about this message failure, since client don’t send any acknowledgement.  In RRA protocol client the client sends an acknowledgement in response to the reply message sent by server and thus making it more reliable .
+5. Client-server Binding  In a RPC communication between a client and a server , the client stub should know well in advance the location of server to make a remote procedure call.  The process in which client becomes associated with the location of server to make a remote procedure call.  The process in which client becomes associated with server to establish a remote call is referred for the as “client-server binding” .  The server first registers itself with a binding agent to announce its availability .
+6.  Before a remote call can be made , the client requests the binding agent for the address of server location .  Since binding agent mechanism has drawbacks , since it involves huge overhead. Also the binding agent must be robust against failures since it can become a single point of failure.  The binding agent should not become a bottleneck problem due to large number of requests and replies.
+7. Other issues related to RPC mechanism  In addition to various issues discussed so far, the RPC mechanism has following two important issues:  Security  Exception handling  Some of the RPC implementation include client and server authentication and also provide encrypted message to handle security issues.  The RPC mechanism must have a strong exception- handling mechanism to handle errors and failures occurred during message transmission and report failures to client as well as server.
+8. DIFFERENCE BETWEEN THREADS AND PROCESSES
+9. THREADS PROCESSES 1. Threads are the unit of execution in a process: A virtualized processor, a stack, and program state. Processes are running binaries and threads are the smallest unit of execution schedulable by an operating system's process scheduler. 1. Processes are the abstraction of running programs: A binary image, virtualized memory, various kernel resources, an associated security context, and so on. 2. A thread is an entity within a process that can be scheduled for execution. All threads of a process share its virtual address space and system resources. In addition, each thread maintains exception handlers, a scheduling priority, thread local storage, a unique thread identifier, and a set of structures the system will use to save the thread context until it is scheduled. 2. Each process provides the resources needed to execute a program. A process has a virtual address space, executable code, open handles to system objects, a security context, a unique process identifier, environment variables, a priority class, minimum and maximum working set sizes, and at least one thread of execution.
+10. THREADS PROCESSES 3. Threads, since they share the same address space are interdependent, so caution must be taken so that different threads don't step on each other. 3. Processes are independent of each other. 4. Threads exist within a process and every process has at least one thread. 4. A process has a self contained execution environment that means it has a complete, private set of basic run time resources purticularly each process has its own memory space. 5. Threads are considered lightweight because they use far less resources than processes. 5. A process can consist of multiple threads.
+11. Kernel level threads  Kernel-Level Threads  To make concurrency cheaper, the execution aspect of process is separated out into threads. As such, the OS now manages threads and processes. All thread operations are implemented in the kernel and the OS schedules all threads in the system. OS managed threads are called kernel-level threads or light weight processes.  NT: Threads  Solaris: Lightweight processes(LWP).  In this method, the kernel knows about and manages the threads. No runtime system is needed in this case. Instead of thread table in each process, the kernel has a thread table that keeps track of all threads in the system. In addition, the kernel also maintains the traditional process table to keep track of processes. Operating Systems kernel provides system call to create and manage threads.
+12. ADVANTAGES AND DISADAVNTAGES  Advantages:   Because kernel has full knowledge of all threads, Scheduler may decide to give more time to a process having large number of threads than process having small number of threads.  Kernel-level threads are especially good for applications that frequently block.   Disadvantages:   The kernel-level threads are slow and inefficient. For instance, threads operations are hundreds of times slower than that of user-level threads.  Since kernel must manage and schedule threads as well as processes. It require a full thread control block (TCB) for each thread to maintain information about threads. As a result there is significant overhead and increased in kernel complexity.
+13. USER-LEVEL THREADS  User-Level Threads  Kernel-Level threads make concurrency much cheaper than process because, much less state to allocate and initialize. However, for fine-grained concurrency, kernel-level threads still suffer from too much overhead. Thread operations still require system calls. Ideally, we require thread operations to be as fast as a procedure call. Kernel-Level threads have to be general to support the needs of all programmers, languages, runtimes, etc. For such fine grained concurrency we need still "cheaper" threads.  To make threads cheap and fast, they need to be implemented at user level. User-Level threads are managed entirely by the run-time system (user-level library).The kernel knows nothing about user-level threads and manages them as if they were single-threaded processes . User-Level threads are small and fast, each thread is represented by a PC , register , stack, and small thread control block. Creating a new thread, switching between threads, and synchronizing threads are done via procedure call. i.e. no kernel involvement. User-Level threads are hundred times faster than Kernel-Level threads.
+14. ADVANTAGES AND DISADVANTAGES  Advantages:  The most obvious advantage of this technique is that a user-level threads package can be implemented on an Operating System that does not support threads.  User-level threads does not require modification to operating systems.  Simple Representation: Each thread is represented simply by a PC, registers, stack and a small control block, all stored in the user process address space.  Simple Management: This simply means that creating a thread, switching between threads and synchronization between threads can all be done without intervention of the kernel.  Fast and Efficient: Thread switching is not much more expensive than a procedure call.
+15. DISADVANTAGES:  Disadvantages:  User-Level threads are not a perfect solution as with everything else, they are a trade off. Since, User-Level threads are invisible to the OS they are not well integrated with the OS. As a result, Os can make poor decisions like scheduling a process with idle threads, blocking a process whose thread initiated an I/O even though the process has other threads that can run and unscheduling a process with a thread holding a lock. Solving this requires communication between kernel and user-level thread manager.  There is a lack of coordination between threads and operating system kernel. Therefore, process as whole gets one time slice irrespect of whether process has one thread or 1000 threads within. It is up to each thread to relinquish control to other threads.  User-level threads requires non-blocking systems call i.e., a multithreaded kernel. Otherwise, entire process will blocked in the kernel, even if there are runnable threads left in the processes. For example, if one thread causes a page fault, the process blocks.
+16. Happened Before Relationship  In case of ordering events according to time, Lamport proposed a scheme using logical clocks.  Since there is no perfect synchronisation in local time b/w the 2 processes , due to unavailability of a global clock, events cant be ordered based on time. What Lamport proposed that is possible to order events b/w the processes based on the behaviour of that specific computation.  He used the notion of “happened before ” relation.  It captures the casual dependencies b/w events i.e. 2 relations are related or not . The relation ->is defined as:  1. a->b i.e. a occurred before b 2. a->b  Here a is sending message to b. Both a and b are from different processes.  3. If a->b and b->c then a->c  i.e. -> relation is transitive.
+17.  In a distributed system, the ordering of the events occurring in the processes involved has impact on the outcome of events yields different outcomes. Hence designing and understanding the sequence of execution for a computation is very important.  So event that are ordered by -> relation are called as casually related events and this effect is called as casual effects.  Therefore, event ‘a’ casually affects event ‘b’, if a->b. Both the events a and b are said to be casually related events .  2 distinct events a and b are called as concurrent events and are denoted by a||b.
+18. Logical clocks:  Lamport introduced logical clocks to realize the relation “->”. The clock say Ci a each process P(i) works on the concept of timestamp.  Let Ci(a) is the clock value for event a. The value cia is called timestamp of event a at pi.  The values assigned to the clocks don’t have any relation to the actual time.  The logical clocks have increasing values and thy can be implemented with the help of counters .i.e. 1,2,3,4 and so on.  Conditions satisfied by logical  For any events a and b,  If a->b  Then C(a)<C(b)  The relation -> can be realized by using logical clock if following 2 conditions are met.  Condition 1  For any events a and b in a process pi, if a occurs before b,  Then ci (a) <cib  Condition 2  If event a is sending , event a message m in process pi to the event b in process pj,  Then cia <cjb
+19. IMPLEMENTATION:  Following two implementation rules guarantee that the clocks satisfy condition 1 and condition 2:  Implementation rule 1  The clock ci is incremented b/w 2 successive events in a process pi:  Ci = ci +d(d>0)  If a and b are two successive events in pi and a -> b, then it becomes:  Ci(b)=ci(a )+d  Implementation rule 2  If event a is sending a message m by a process pi to event b by a process pj and the timestamp for the message m is tm them :  Tm = ci (a) -> timestamp of event a in clock ciOn receiving the message the clock cj is set to a value greater than or equal or equal to its present value and greater than tm.  Cj=max(cj,tm+d)  Where d>0
+20. Effects of RMI execution  In java ,the difference b/w a local method invocation and remote method invocation is kept hidden from the user.  After marshalling (i.e. convert the object into required format for presentation ) the object is passed as a parameter to RMI in Java.  A java remote object is built from two main classes :  1. Server class 2. Client class  The server-class contains the implementation of server-side code that runs on server and client-class contains the implementation of client-side code.
+21.  In computing, the Java Remote Method Invocation (Java RMI) is a Java APIthat performs remote method invocation, the object-oriented equivalent of remote procedure calls (RPC), with support for direct transfer of serialized Java classes and distributed garbage- collection.  The original implementation depends on Java Virtual Machine (JVM) class-representation mechanisms and it thus only supports making calls from one JVM to another. The protocol underlying this Java-only implementation is known as Java Remote Method Protocol (JRMP). In order to support code running in a non-JVM context, programmers later developed a CORBA version.
+22.  Usage of the term RMI may denote solely the programming interface or may signify both the API and JRMP , IIOP , or another implementation, whereas the term RMI-IIOP (read: RMI over IIOP) specifically denotes the RMI interface delegating most of the functionality to the supporting CORBA implementation.  The basic idea of Java RMI, the distributed garbage- collection (DGC) protocol, and much of the architecture underlying the original Sun implementation, come from the "network objects" feature of Modula-3.
+Recommended
+Software project management
+Software project management
+shraddha mane
+Road Accident Alert System
+Road Accident Alert System
+shraddha mane
+Dhrupal Installation steps
+Dhrupal Installation steps
+shraddha mane
+Dmbi project doc2
+Dmbi project doc2
+shraddha mane
+Dmbi project doc
+Dmbi project doc
+shraddha mane
+Rural issues and development
+Rural issues and development
+shraddha mane
+Report on mini project(Student database handling using RMI)
+Report on mini project(Student database handling using RMI)
+shraddha mane
+English Español Português Français Deutsch
+About Dev & API Blog Terms Privacy Copyright Support
+    
+LinkedIn Corporation © 2019

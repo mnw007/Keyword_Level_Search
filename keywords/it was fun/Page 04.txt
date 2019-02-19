@@ -1,0 +1,191 @@
+ 
++20
+Join this community
+By using our site, you acknowledge that you have read and understand our Cookie Policy, Privacy Policy, and our Terms of Service.
+
+English Language Learners Stack Exchange is a question and answer site for speakers of other languages learning English. Join them; it only takes a minute:
+Join
+Here's how it works:
+Anybody can ask a question
+Anybody can answer
+The best answers are voted up and rise to the top
+English Language Learners
+Home
+Questions
+Tags
+Users
+Unanswered
+In 'it was a lot of fun', is 'fun a noun or an adjective?
+Ask Question
+
+1
+
+
+[i] I hope that you have a lot of fun at the flower festival.
+[ii] I don't think I'll go again, but it was a lot of fun! (daum.net)
+
+At first, I took it granted that a lot of fun’s both in [i] an [ii] have the same structure. But when this idea struck me that a lot of fun in [ii] seems to be adjective, I flipped over grammar books, looking for which says a lot of is a modifier for adjectives. But I have not found.
+So I started to think [ii] has this structure and meaning:
+‘it was a lot [= very] of fun [= fun]’ Can I get exact meaning of [ii]?
+
+vocabulary modifiers
+shareimprove this question
+asked Aug 6 '14 at 6:38
+
+Listenever
+13.6k2180180
+In one dictionary, under the noun "fun", it has this example: she's full of fun. – F.E. Aug 6 '14 at 7:14
+In these examples, fun is a noun. A lot of fun is a noun phrase. What makes it seem like an adjective to you? – snailboat♦ Aug 6 '14 at 8:28
+@snailplane: maybe because in the sentence "I am good", good is an adjective, and not the noun (which would mean something completely different). I would say you can see the sentence It was fun as [subject][copula][adjective]. – oerkelens Aug 6 '14 at 8:48
+1
+@snailplane Now I got an idea why I was thinking ‘fun’ as adjective in the case. It’s from my own language that has no post-modifiers as in “A something that is amusing”. When I interpret ‘fun’ into my language, [A]’s sequence changes: amusing something. After this thought, I read ‘a lot of fun’ as ‘fantastic/amusing thing’, and this made me read ‘a lot of’ as a quantifier before the noun. – Listenever Aug 6 '14 at 10:34 
+1
+It might help to compare the two senses of fun with joy: "It was a great joy," and "It was so joyful." – Damkerng T. Aug 6 '14 at 22:02
+show 1 more comment
+2 Answers
+active oldest votes
+
+3
+
+The use of "of" here excludes the possibility of having an adjective following the expression. "A lot of" is used as a determiner referring to a quantity of something and a determiner does not modify an adjective directly.
+
+It would be the same with words like some or any:
+
+It was really some fun.
+It wasn't any fun.
+It was no fun at all.
+
+"A lot" (without "of") could be used to express intensity in front of an adjective in comparisons :
+
+He's a lot taller than his brother.
+
+It is possible to use the word "fun" as an adjective instead of "funny" in sentences like:
+
+He's fun to be with.
+The party was fun.
+
+Anything said about "a lot of" would stand for "a good deal of" as well.
+
+shareimprove this answer
+answered Aug 6 '14 at 8:07
+
+Laure
+4,71811535
+add a comment
+ 
+2
+
+Well, if you rephrase it (don't actually use it that way) as 'big amount of the thing called "fun"', emphasis on "thing", it should become clear that it is a noun, no?
+
+shareimprove this answer
+answered Aug 6 '14 at 7:06
+
+No. 7892142
+36418
+add a comment
+Your Answer
+
+Sign up or log in
+ Sign up using Google
+ Sign up using Facebook
+ Sign up using Email and Password
+Post as a guest
+Name
+
+Email
+Required, but never shown
+
+
+Post Your Answer
+By clicking "Post Your Answer", you acknowledge that you have read our updated terms of service, privacy policy and cookie policy, and that your continued use of the website is subject to these policies.
+
+Not the answer you're looking for? Browse other questions tagged vocabulary modifiers or ask your own question.
+asked
+
+4 years, 5 months ago
+
+viewed
+
+3,215 times
+
+active
+
+4 years, 5 months ago
+
+BLOG
+Stack Overflow & InfoJobs: Bringing Opportunities to Developers in Spain
+Related
+2
+Strike could think of little he wanted to do less
+0
+he was due some
+7
+What is the difference between an adjective before the noun and after the noun?
+3
+Filling gaps in my vocabulary
+3
+The role of 'sleeping' in 'sleeping baby'
+2
+seized on first Romulus
+0
+How to systematically collect advanced vocabulary?
+0
+Is 'stolen' used as an adjective or noun?
+5
+Two adverbs in a row with “-ly”
+0
+Is the construction “noun- and adverb adjective noun” correct?
+Hot Network Questions
+Extreme paper space saving, very small margins, how to lower the page number
+Which work assignment is making medicine?
+Chlorine Trifluoride as a Space Weapon?
+Print Screen key in i3
+How to load a vector layer in Python console?
+Sum of Powers of 2
+What happens when a 5/5 blocks a 6/4?
+Is this Variant Monstrosity Druid balanced?
+Execution plan doesn't show memory grant
+Will my breaker accept #10 wire even though the chart lists #14?
+Skills the player has, but the character doesn’t vs. skills the character has, but the player doesn’t
+What should I do (If anything) to prevent my players from rushing to the end of the Lost Mine of Phandelver campaign?
+How much is unrefined gold ore worth?
+Keep old rank or start afresh?
+Employee (my direct report) underperforming due to religious fasting - how to address?
+What is the rationale behind the differences between the compiler diagnostics issued when it sees std::vector<Typo> and std::vector<struct Typo>
+Why do RPGs let you know how much XP you need to level up?
+If there are no diminished keys, then why does Locrian mode exist?
+Is it unethical to anonymously give a flagged solution to an unidentified student who has shown intent to cheat?
+Would it be feasible to have a wolf as a mount?
+How do I return a new dictionary if the keys in one dictionary, match the keys in another dictionary?
+Invertible Matrices within a Matrix
+Do I need a serious reason to enter a US Embassy as a US Citizen?
+Can you help me identify a vintage airplane in a painting?
+ question feed
+ENGLISH LANGUAGE LEARNERS
+Tour
+Help
+Chat
+Contact
+Feedback
+Mobile
+Disable Responsiveness
+COMPANY
+Stack Overflow
+Stack Overflow Business
+Developer Jobs
+About
+Press
+Legal
+Privacy Policy
+STACK EXCHANGE
+NETWORK
+Technology
+Life / Arts
+Culture / Recreation
+Science
+Other
+Blog
+Facebook
+Twitter
+LinkedIn
+site design / logo © 2019 Stack Exchange Inc; user contributions licensed under cc by-sa 3.0 with attribution required. rev 2019.1.31.32775

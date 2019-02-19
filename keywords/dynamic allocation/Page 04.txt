@@ -1,0 +1,191 @@
+
+Memory management
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+"Memory allocation" redirects here. For memory allocation in the brain, see Neuronal memory allocation.
+This article is about memory management at the application level. For memory management at the operating system level, see Memory management (operating systems).
+
+This article includes a list of references, but its sources remain unclear because it has insufficient inline citations. Please help to improve this article by introducing more precise citations. (April 2014) (Learn how and when to remove this template message)
+Operating systems
+Operating system placement.svg
+About this image
+Common features
+Process management Interrupts Memory management File system Device drivers Networking Security I/O
+vte
+Memory management is a form of resource management applied to computer memory. The essential requirement of memory management is to provide ways to dynamically allocate portions of memory to programs at their request, and free it for reuse when no longer needed. This is critical to any advanced computer system where more than a single process might be underway at any time.[1]
+
+Several methods have been devised that increase the effectiveness of memory management. Virtual memory systems separate the memory addresses used by a process from actual physical addresses, allowing separation of processes and increasing the size of the virtual address space beyond the available amount of RAM using paging or swapping to secondary storage. The quality of the virtual memory manager can have an extensive effect on overall system performance.
+
+
+Contents
+1	Details
+1.1	Dynamic memory allocation
+1.1.1	Efficiency
+1.1.2	Implementations
+1.1.2.1	Fixed-size blocks allocation
+1.1.2.2	Buddy blocks
+1.1.2.3	Slab allocation
+1.1.2.4	Stack allocation
+1.2	Automatic variables
+1.2.1	Garbage collection
+2	Systems with virtual memory
+3	See also
+4	Notes
+5	Notes
+6	References
+7	Further reading
+8	External links
+Details
+[icon]	
+This section needs expansion. You can help by adding to it. (November 2016)
+Application-level memory management is generally categorized as either automatic memory management, usually involving garbage collection, or manual memory management.
+
+Dynamic memory allocation
+
+An example of external fragmentation
+See also: C dynamic memory allocation
+The task of fulfilling an allocation request consists of locating a block of unused memory of sufficient size. Memory requests are satisfied by allocating portions from a large pool of memory called the heap or free store.[a] At any given time, some parts of the heap are in use, while some are "free" (unused) and thus available for future allocations.
+
+Several issues complicate the implementation, such as external fragmentation, which arises when there are many small gaps between allocated memory blocks, which invalidates their use for an allocation request. The allocator's metadata can also inflate the size of (individually) small allocations. This is often managed by chunking. The memory management system must track outstanding allocations to ensure that they do not overlap and that no memory is ever "lost" (i.e. that there be no "memory leak").
+
+Efficiency
+The specific dynamic memory allocation algorithm implemented can impact performance significantly. A study conducted in 1994 by Digital Equipment Corporation illustrates the overheads involved for a variety of allocators. The lowest average instruction path length required to allocate a single memory slot was 52 (as measured with an instruction level profiler on a variety of software).[2]
+
+Implementations
+Since the precise location of the allocation is not known in advance, the memory is accessed indirectly, usually through a pointer reference. The specific algorithm used to organize the memory area and allocate and deallocate chunks is interlinked with the kernel, and may use any of the following methods:
+
+Fixed-size blocks allocation
+Main article: Memory pool
+Fixed-size blocks allocation, also called memory pool allocation, uses a free list of fixed-size blocks of memory (often all of the same size). This works well for simple embedded systems where no large objects need to be allocated, but suffers from fragmentation, especially with long memory addresses. However, due to the significantly reduced overhead this method can substantially improve performance for objects that need frequent allocation / de-allocation and is often used in video games.
+
+Buddy blocks
+Further information: Buddy memory allocation
+In this system, memory is allocated into several pools of memory instead of just one, where each pool represents blocks of memory of a certain power of two in size, or blocks of some other convenient size progression. All blocks of a particular size are kept in a sorted linked list or tree and all new blocks that are formed during allocation are added to their respective memory pools for later use. If a smaller size is requested than is available, the smallest available size is selected and split. One of the resulting parts is selected, and the process repeats until the request is complete. When a block is allocated, the allocator will start with the smallest sufficiently large block to avoid needlessly breaking blocks. When a block is freed, it is compared to its buddy. If they are both free, they are combined and placed in the correspondingly larger-sized buddy-block list.
+
+Slab allocation
+Main article: Slab allocation
+This memory allocation mechanism preallocates memory chunks suitable to fit objects of a certain type or size.[3] These chunks are called caches and the allocator only has to keep track of a list of free cache slots. Constructing an object will use any one of the free cache slots and destructing an object will add a slot back to the free cache slot list. This technique alleviates memory fragmentation and is efficient as there is no need to search for a suitable portion of memory, as any open slot will suffice.
+
+Stack allocation
+Main article: Stack-based memory allocation
+[icon]	
+This section needs expansion. You can help by adding to it. (November 2016)
+Automatic variables
+Main article: Automatic variable
+In many programming language implementations, all variables declared within a procedure (subroutine, or function) are local to that function; the runtime environment for the program automatically allocates memory for these variables on program execution entry to the procedure, and automatically releases that memory when the procedure is exited. Special declarations may allow local variables to retain values between invocations of the procedure, or may allow local variables to be accessed by other procedures. The automatic allocation of local variables makes recursion possible, to a depth limited by available memory.
+
+Garbage collection
+Main article: Garbage collection (computer science)
+Garbage collection is a strategy for automatically detecting memory allocated to objects that are no longer usable in a program, and returning that allocated memory to a pool of free memory locations. This method is in contrast to "manual" memory management where a programmer explicitly codes memory requests and memory releases in the program. While automatic garbage has the advantages of reducing programmer workload and preventing certain kinds of memory allocation bugs, garbage collection does require memory resources of its own, and can compete with the application program for processor time.
+
+Systems with virtual memory
+Main articles: Memory protection and Shared memory (interprocess communication)
+Virtual memory is a method of decoupling the memory organization from the physical hardware. The applications operate on memory via virtual addresses. Each attempt by the application to access a particular virtual memory address results in the virtual memory address being translated to an actual physical address. In this way the addition of virtual memory enables granular control over memory systems and methods of access.
+
+In virtual memory systems the operating system limits how a process can access the memory. This feature, called memory protection, can be used to disallow a process to read or write to memory that is not allocated to it, preventing malicious or malfunctioning code in one program from interfering with the operation of another.
+
+Even though the memory allocated for specific processes is normally isolated, processes sometimes need to be able to share information. Shared memory is one of the fastest techniques for inter-process communication.
+
+Memory is usually classified by access rate into primary storage and secondary storage. Memory management systems, among other operations, also handle the moving of information between these two levels of memory.
+
+See also
+icon	Computer science portal
+Dynamic array
+Out of memory
+Notes
+ Not to be confused with the unrelated heap data structure.
+Notes
+ Gibson, Steve (August 15, 1988). "Tech Talk: Placing the IBM/Microsoft XMS Spec Into Perspective". InfoWorld.
+ Detlefs, D.; Dosser, A.; Zorn, B. (June 1994). "Memory allocation costs in large C and C++ programs" (PDF). Software: Practice and Experience. 24 (6): 527–542. CiteSeerX 10.1.1.30.3073. doi:10.1002/spe.4380240602.
+ Abraham Silberschatz; Peter B. Galvin (2004). Operating system concepts. Wiley. ISBN 0-471-69466-5.
+References
+Donald Knuth. Fundamental Algorithms, Third Edition. Addison-Wesley, 1997. ISBN 0-201-89683-4. Section 2.5: Dynamic Storage Allocation, pp. 435–456.
+Simple Memory Allocation AlgorithmsArchived 5 March 2016 at the Wayback Machine (originally published on OSDEV Community)
+Wilson, P. R.; Johnstone, M. S.; Neely, M.; Boles, D. (1995). "Dynamic storage allocation: A survey and critical review". Memory Management. Lecture Notes in Computer Science. 986. pp. 1–116. CiteSeerX 10.1.1.47.275. doi:10.1007/3-540-60368-9_19. ISBN 978-3-540-60368-9.
+Berger, E. D.; Zorn, B. G.; McKinley, K. S. (June 2001). "Composing High-Performance Memory Allocators". Proceedings of the ACM SIGPLAN 2001 conference on Programming language design and implementation (PDF). pp. 114–124. CiteSeerX 10.1.1.1.2112. doi:10.1145/378795.378821. ISBN 1-58113-414-2.
+Berger, E. D.; Zorn, B. G.; McKinley, K. S. (November 2002). "Reconsidering Custom Memory Allocation". Proceedings of the 17th ACM SIGPLAN conference on Object-oriented programming, systems, languages, and applications (PDF). pp. 1–12. CiteSeerX 10.1.1.119.5298. doi:10.1145/582419.582421. ISBN 1-58113-471-1.
+Further reading
+	Wikibooks has more on the topic of: Memory management
+Wilson, Paul R.; Johnstone, Mark S.; Neely, Michael; Boles, David (September 28–29, 1995), Dynamic Storage Allocation: A Survey and Critical Review (PDF), Austin, Texas: Department of Computer Sciences University of Texas, retrieved 2017-06-03
+External links
+"Generic Memory Manager" C++ library
+Sample bit-mapped arena memory allocator in C
+TLSF: a constant time allocator for real-time systems
+Slides on Dynamic memory allocation
+Inside A Storage Allocator
+The Memory Management Reference
+The Memory Management Reference, Beginner's Guide Allocation
+Linux Memory Management
+Memory Management For System Programmers
+VMem - general malloc/free replacement. Fast thread safe C++ allocator
+A small old site dedicated to memory management
+Dynamic Memory in IEC61508 Systems
+vte
+Memory management
+Memory management as a function of an operating system
+Manual memory management	
+Static memory allocation C dynamic memory allocation new and delete (C++)
+Virtual memory	
+Demand paging Page table Paging Virtual memory compression
+Hardware	
+Memory management unit Translation lookaside buffer
+Garbage collection	
+Boehm garbage collector Concurrent mark sweep collector Finalizer Garbage Garbage-first collector Mark-compact algorithm Reference counting Tracing garbage collection Strong reference Weak reference
+Memory segmentation	
+Protected mode Real mode Virtual 8086 mode x86 memory segmentation
+Memory safety	
+Buffer overflow Buffer over-read Dangling pointer Stack overflow
+Issues	
+Fragmentation Memory leak Unreachable memory
+Other	
+Automatic variable International Symposium on Memory Management Region-based memory management
+Authority control Edit this at Wikidata	
+GND: 4182146-4
+Categories: Memory managementComputer architecture
+Navigation menu
+Not logged inTalkContributionsCreate accountLog inArticleTalkReadEditView historySearch
+
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+In other projects
+Wikimedia Commons
+
+Languages
+العربية
+Deutsch
+Español
+Français
+Bahasa Melayu
+日本語
+Português
+Русский
+中文
+15 more
+Edit links
+This page was last edited on 30 January 2019, at 17:01 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersCookie statementMobile viewWikimedia Foundation Powered by MediaWiki

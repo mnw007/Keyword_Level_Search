@@ -1,0 +1,300 @@
+
+Skip to content
+
+    Python
+    PSF
+    Docs
+    PyPI
+    Jobs
+    Community
+
+python™
+Donate
+Search This Site
+
+    Socialize
+
+    About
+    Downloads
+    Documentation
+    Community
+    Success Stories
+    News
+    Events
+
+Download the latest version for Windows
+
+Download Python 3.7.2
+
+Looking for Python with a different OS? Python for Windows, Linux/UNIX, Mac OS X, Other
+
+Want to help test development versions of Python? Pre-releases
+
+Looking for Python 2.7? See below for specific releases
+Looking for a specific release?
+
+Python releases by version number:
+Release version Release date   Click for more
+
+    Python 3.7.2 2018-12-24 Download Release Notes
+    Python 3.6.8 2018-12-24 Download Release Notes
+    Python 3.7.1 2018-10-20 Download Release Notes
+    Python 3.6.7 2018-10-20 Download Release Notes
+    Python 3.5.6 2018-08-02 Download Release Notes
+    Python 3.4.9 2018-08-02 Download Release Notes
+    Python 3.7.0 2018-06-27 Download Release Notes
+    Python 3.6.6 2018-06-27 Download Release Notes
+    Python 2.7.15 2018-05-01 Download Release Notes
+    Python 3.6.5 2018-03-28 Download Release Notes
+    Python 3.4.8 2018-02-05 Download Release Notes
+    Python 3.5.5 2018-02-05 Download Release Notes
+    Python 3.6.4 2017-12-19 Download Release Notes
+    Python 3.6.3 2017-10-03 Download Release Notes
+    Python 3.3.7 2017-09-19 Download Release Notes
+    Python 2.7.14 2017-09-16 Download Release Notes
+    Python 3.4.7 2017-08-09 Download Release Notes
+    Python 3.5.4 2017-08-08 Download Release Notes
+    Python 3.6.2 2017-07-17 Download Release Notes
+    Python 3.6.1 2017-03-21 Download Release Notes
+    Python 3.4.6 2017-01-17 Download Release Notes
+    Python 3.5.3 2017-01-17 Download Release Notes
+    Python 3.6.0 2016-12-23 Download Release Notes
+    Python 2.7.13 2016-12-17 Download Release Notes
+    Python 3.4.5 2016-06-27 Download Release Notes
+    Python 3.5.2 2016-06-27 Download Release Notes
+    Python 2.7.12 2016-06-25 Download Release Notes
+    Python 3.4.4 2015-12-21 Download Release Notes
+    Python 3.5.1 2015-12-07 Download Release Notes
+    Python 2.7.11 2015-12-05 Download Release Notes
+    Python 3.5.0 2015-09-13 Download Release Notes
+    Python 2.7.10 2015-05-23 Download Release Notes
+    Python 3.4.3 2015-02-25 Download Release Notes
+    Python 2.7.9 2014-12-10 Download Release Notes
+    Python 3.4.2 2014-10-13 Download Release Notes
+    Python 3.3.6 2014-10-12 Download Release Notes
+    Python 3.2.6 2014-10-12 Download Release Notes
+    Python 2.7.8 2014-07-02 Download Release Notes
+    Python 2.7.7 2014-06-01 Download Release Notes
+    Python 3.4.1 2014-05-19 Download Release Notes
+    Python 3.4.0 2014-03-17 Download Release Notes
+    Python 3.3.5 2014-03-09 Download Release Notes
+    Python 3.3.4 2014-02-09 Download Release Notes
+    Python 3.3.3 2013-11-17 Download Release Notes
+    Python 2.7.6 2013-11-10 Download Release Notes
+    Python 2.6.9 2013-10-29 Download Release Notes
+    Python 3.3.2 2013-05-15 Download Release Notes
+    Python 3.2.5 2013-05-15 Download Release Notes
+    Python 2.7.5 2013-05-12 Download Release Notes
+    Python 3.3.1 2013-04-06 Download Release Notes
+    Python 2.7.4 2013-04-06 Download Release Notes
+    Python 3.2.4 2013-04-06 Download Release Notes
+    Python 3.3.0 2012-09-29 Download Release Notes
+    Python 2.6.8 2012-04-10 Download Release Notes
+    Python 3.2.3 2012-04-10 Download Release Notes
+    Python 3.1.5 2012-04-09 Download Release Notes
+    Python 2.7.3 2012-04-09 Download Release Notes
+    Python 3.2.2 2011-09-03 Download Release Notes
+    Python 3.2.1 2011-07-09 Download Release Notes
+    Python 2.7.2 2011-06-11 Download Release Notes
+    Python 3.1.4 2011-06-11 Download Release Notes
+    Python 2.6.7 2011-06-03 Download Release Notes
+    Python 2.5.6 2011-05-26 Download Release Notes
+    Python 3.2.0 2011-02-20 Download Release Notes
+    Python 3.1.3 2010-11-27 Download Release Notes
+    Python 2.7.1 2010-11-27 Download Release Notes
+    Python 2.6.6 2010-08-24 Download Release Notes
+    Python 2.7.0 2010-07-03 Download Release Notes
+    Python 3.1.2 2010-03-20 Download Release Notes
+    Python 2.6.5 2010-03-18 Download Release Notes
+    Python 2.5.5 2010-01-31 Download Release Notes
+    Python 2.6.4 2009-10-26 Download Release Notes
+    Python 2.6.3 2009-10-02 Download Release Notes
+    Python 3.1.1 2009-08-17 Download Release Notes
+    Python 3.1.0 2009-06-26 Download Release Notes
+    Python 2.6.2 2009-04-14 Download Release Notes
+    Python 3.0.1 2009-02-13 Download Release Notes
+    Python 2.5.4 2008-12-23 Download Release Notes
+    Python 2.4.6 2008-12-19 Download Release Notes
+    Python 2.5.3 2008-12-19 Download Release Notes
+    Python 2.6.1 2008-12-04 Download Release Notes
+    Python 3.0.0 2008-12-03 Download Release Notes
+    Python 2.6.0 2008-10-02 Download Release Notes
+    Python 2.4.5 2008-03-11 Download Release Notes
+    Python 2.3.7 2008-03-11 Download Release Notes
+    Python 2.5.2 2008-02-21 Download Release Notes
+    Python 2.5.1 2007-04-19 Download Release Notes
+    Python 2.3.6 2006-11-01 Download Release Notes
+    Python 2.4.4 2006-10-18 Download Release Notes
+    Python 2.5.0 2006-09-19 Download Release Notes
+    Python 2.4.3 2006-04-15 Download Release Notes
+    Python 2.4.2 2005-09-27 Download Release Notes
+    Python 2.4.1 2005-03-30 Download Release Notes
+    Python 2.3.5 2005-02-08 Download Release Notes
+    Python 2.4.0 2004-11-30 Download Release Notes
+    Python 2.3.4 2004-05-27 Download Release Notes
+    Python 2.3.3 2003-12-19 Download Release Notes
+    Python 2.3.2 2003-10-03 Download Release Notes
+    Python 2.3.1 2003-09-23 Download Release Notes
+    Python 2.3.0 2003-07-29 Download Release Notes
+    Python 2.2.3 2003-05-30 Download Release Notes
+    Python 2.2.2 2002-10-14 Download Release Notes
+    Python 2.2.1 2002-04-10 Download Release Notes
+    Python 2.1.3 2002-04-09 Download Release Notes
+    Python 2.2.0 2001-12-21 Download Release Notes
+    Python 2.0.1 2001-06-22 Download Release Notes
+
+View older releases
+Licenses
+
+All Python releases are Open Source. Historically, most, but not all, Python releases have also been GPL-compatible. The Licenses page details GPL-compatibility and Terms and Conditions.
+
+Read more
+Sources
+
+For most Unix systems, you must download and compile the source code. The same source code archive can also be used to build the Windows and Mac versions, and is the starting point for ports to all other platforms.
+
+Download the latest Python 3 and Python 2 source.
+
+Read more
+Alternative Implementations
+
+This site hosts the "traditional" implementation of Python (nicknamed CPython). A number of alternative implementations are available as well.
+
+Read more
+History
+
+Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum in the Netherlands as a successor of a language called ABC. Guido remains Python’s principal author, although it includes many contributions from others.
+
+Read more
+Release Schedules
+
+    Python 3.7 Release Schedule
+    Python 3.6 Release Schedule
+    Python 3.5 Release Schedule
+    Python 3.4 Release Schedule
+    Python 2.7 Release Schedule
+
+Information about specific ports, and developer info
+
+    Windows (and DOS)
+    Macintosh
+    Other platforms
+    Source
+    Python Developer's Guide
+    Python Issue Tracker
+
+OpenPGP Public Keys
+
+Source and binary executables are signed by the release manager using their OpenPGP key. The release managers and binary builders since Python 2.3 have been:
+
+    Anthony Baxter (key id: 6A45C816)
+    Georg Brandl (key id: 36580288)
+    Ned Deily (key ids: AA65421D, 6F5E1540, and Apple Developer ID DJ3H93M7VJ)
+    Steve Dower (key id: 487034E5)
+    Larry Hastings (key id: F73C700D)
+    Łukasz Langa (key id: 10250568)
+    Martin v. Löwis (key id: 7D9DC8D2)
+    Ronald Oussoren (key id: E6DF025C)
+    Benjamin Peterson (key id: 18ADD4FF and A4135B38)
+    Barry Warsaw (key ids: A74B06BF, EA5BBD71, and ED9D77D5)
+
+
+Note: Barry's key id A74B06BF is used to sign the Python 2.6.8 and 2.6.9 releases. His key id EA5BBD71 was used to sign all other Python 2.6 and 3.0 releases. His key id ED9D77D5 is a v3 key and was used to sign older releases; because it is an old MD5 key and rejected by more recent implementations, ED9D77D5 is no longer included in the public key file.
+
+You can import the release manager public keys by either downloading the public key file from here and then running
+
+gpg --import pubkeys.txt
+
+or by grabbing the individual keys directly from the keyserver network by running this command:
+
+gpg --recv-keys 10250568 6A45C816 36580288 7D9DC8D2 18ADD4FF A4135B38 A74B06BF EA5BBD71 E6DF025C AA65421D 6F5E1540 F73C700D 487034E5
+
+On the version-specific download pages, you should see a link to both the downloadable file and a detached signature file. To verify the authenticity of the download, grab both files and then run this command:
+
+gpg --verify Python-3.6.2.tgz.asc
+
+Note that you must use the name of the signature file, and you should use the one that's appropriate to the download you're verifying.
+
+    (These instructions are geared to GnuPG and Unix command-line users. Contributions of instructions for other platforms and OpenPGP applications are welcome.)
+
+Other Useful Items
+
+    Looking for 3rd party Python modules? The Package Index has many of them.
+    You can view the standard documentation online, or you can download it in HTML, PostScript, PDF and other formats. See the main Documentation page.
+    Information on tools for unpacking archive files provided on python.org is available.
+    Tip: even if you download a ready-made binary for your platform, it makes sense to also download the source. This lets you browse the standard library (the subdirectory Lib) and the standard collections of demos (Demo) and tools (Tools) that come with it. There's a lot you can learn from the source!
+    There is also a collection of Emacs packages that the Emacsing Pythoneer might find useful. This includes major modes for editing Python, C, C++, Java, etc., Python debugger interfaces and more. Most packages are compatible with Emacs and XEmacs.
+
+Want to contribute?
+
+Want to contribute? See the Python Developer's Guide to learn about how Python development is managed.
+
+    About
+        Applications
+        Quotes
+        Getting Started
+        Help
+        Python Brochure
+    Downloads
+        All releases
+        Source code
+        Windows
+        Mac OS X
+        Other Platforms
+        License
+        Alternative Implementations
+    Documentation
+        Docs
+        Audio/Visual Talks
+        Beginner's Guide
+        Developer's Guide
+        FAQ
+        Non-English Docs
+        PEP Index
+        Python Books
+        Python Essays
+    Community
+        Community Survey
+        Diversity
+        Mailing Lists
+        IRC
+        Forums
+        Python Conferences
+        Special Interest Groups
+        Python Logo
+        Python Wiki
+        Merchandise
+        Community Awards
+        Code of Conduct
+    Success Stories
+        Arts
+        Business
+        Education
+        Engineering
+        Government
+        Scientific
+        Software Development
+    News
+        Python News
+        Community News
+        PSF News
+        PyCon News
+    Events
+        Python Events
+        User Group Events
+        Python Events Archive
+        User Group Events Archive
+        Submit an Event
+    Contributing
+        Developer's Guide
+        Issue Tracker
+        python-dev list
+        Core Mentorship
+        Report a Security Issue
+
+    Help & General Contact
+    Diversity Initiatives
+    Submit Website Bug
+    Status
+
+Copyright ©2001-2019.  Python Software Foundation  Legal Statements  Privacy Policy  Powered by Rackspace

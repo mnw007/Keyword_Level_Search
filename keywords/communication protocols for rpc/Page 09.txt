@@ -1,0 +1,116 @@
+ALERT FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager
+Techopedia - Where IT and Business MeetTOPICS WEBINARSDOWNLOADSDICTIONARYTUTORIALSQ & ARESOURCES
+TRENDING:
+VIRTUALIZATION MACHINE LEARNING BIG DATA ENTERPRISE DEVELOPMENT MORE
+ 
+Topics
+Webinars
+Downloads
+Dictionary
+Tutorials
+Q & A
+Resources
+Trending
+More
+Home  Dictionary  Tags  IT Business  Enterprise Applications 
+Remote Procedure Call (RPC)
+Definition - What does Remote Procedure Call (RPC) mean?
+A remote procedure call (RPC) is a network programming model or interprocess communication technique that is used for point-to-point communications between software applications. Client and server applications communicate during this process.
+
+A remote procedure call is sometimes called a function call or a subroutine call
+
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager
+Techopedia explains Remote Procedure Call (RPC)
+The way RPC works is that a sender or client creates a request in the form of a procedure, function or method call to a remote server, which RPC translates and sends. When the remote server receives the request, it sends a response back to the client and the application continues its process.
+
+When the server processes the call or request, the client waits for the server to finish processing before resuming its process. In general, RPC applications use software modules called proxies and stubs, which make them look like local procedure calls (LPC).
+
+Share this:   
+Related Terms
+Hypertext Transfer Protocol (HTTP)
+Open Database Connectivity (ODBC)
+Windows Service
+Operating System (OS)
+Distributed Component Object Model (DCOM)
+Common Object Request Broker Architecture (CORBA)
+Supervisor Call
+Port Mapper
+Apache Thrift
+.NET Framework (.NET)
+Techopedia - Where IT and Business Meet	
+Tech moves fast! Stay ahead of the curve with Techopedia!
+Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
+
+
+Related Articles
+ How to Get Windows 10 Features in Windows 8.1 
+How to Get Windows 10 Features in Windows 8.1
+ Big Data Silos: What They Are and How to Deal With Them 
+Big Data Silos: What They Are and How to Deal With Them
+ 6 Tech Trends That Could Be a Thing in 2019 ... Or Not 
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+ How AI Can Help Tackle Climate Change 
+How AI Can Help Tackle Climate Change
+ Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology 
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+ Job Role: Software Engineer 
+Job Role: Software Engineer
+Featured Q&A
+What is the difference between a mobile OS and a computer OS?
+How can mobile apps help business?
+What is the difference between scale-out versus scale-up (architecture, applications, etc.)?
+More of your questions answered by our Experts
+Related Tags
+DevelopmentEnterprise ApplicationsOperating SystemsJavaWindowsIT BusinessProtocol
+Synonyms:
+Function Call, Subroutine Call
+RESOURCES
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager	FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager:
+Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily.	Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily.:
+New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices	New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices:
+Complimentary Webinar - Getting Control of Your BYOD Program with UEM	Complimentary Webinar - Getting Control of Your BYOD Program with UEM:
+Systems Monitoring for Dummies	Systems Monitoring for Dummies:
+What's really going on in that Cisco ASA of yours?	What's really going on in that Cisco ASA of yours?:
+E-Book:  Compliance is Not Enough: Planning a Complete Security Strategy	E-Book: Compliance is Not Enough: Planning a Complete Security Strategy:
+LATEST ARTICLES
+ Big Data Silos: What They Are and How to Deal With Them 	
+Big Data Silos: What They Are and How to Deal With Them
+ 6 Tech Trends That Could Be a Thing in 2019 ... Or Not 	
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+ How AI Can Help Tackle Climate Change 	
+How AI Can Help Tackle Climate Change
+ Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology 	
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+ Job Role: Software Engineer 	
+Job Role: Software Engineer
+ABOUT
+About
+Advertising Info
+Contact Us
+Write for Us
+CONTENT
+Topics
+Dictionary
+Q&A
+Tutorials
+TOPICS
+Cloud Computing
+Security
+Big Data
+Online Privacy
+Machine Learning
+IT Business
+Data Management
+All Topics
+CONNECT
+ Facebook
+ Twitter
+ LinkedIn
+ Feed
+MORE
+Webinars
+Downloads
+Newsletters
+Techopedia Terms:    #    A    B    C    D    E    F    G    H    I    J    K    L    M    N    O    P    Q    R    S    T    U    V    W    X    Y    Z   
+
+Copyright © 2019 Techopedia Inc. - Terms of Use - Privacy Policy

@@ -1,0 +1,114 @@
+
+DataCamp
+
+    Learn
+
+    Pricing
+    For Business
+
+Interactive Course
+Introduction to Python
+
+Master the basics of data analysis in Python. Expand your skill set by learning scientific computing with numpy.
+
+    4 hours
+    11 Videos
+    57 Exercises
+    1,246,869 Participants
+    4,700 XP
+
+Create Your Free Account
+or
+
+By continuing you accept the Terms of Use and Privacy Policy, that your data will be stored outside of the EU, and that you are 16 years or older.
+
+This course is part of these tracks:
+
+    Data Analyst with Python
+    Data Scientist with Python
+    Python Programmer
+    Python Programming
+
+Filip Schouwenaars
+Filip Schouwenaars
+
+Data Science Instructor at DataCamp
+
+Filip is the passionate developer behind several of DataCamp's interactive courses, covering both R and Python. Under the motto 'Eat your own dog food', he has used the techniques DataCamp teaches its students to perform data analysis for DataCamp. Filip holds degrees in Electrical Engineering and Artificial Intelligence.
+Collaborator(s)
+
+    Vincent Vankrunkelsven
+
+    Vincent Vankrunkelsven
+    Patrick Varilly
+
+    Patrick Varilly
+
+Datasets
+
+    MLB (baseball)
+    FIFA (soccer)
+
+Course Description
+
+Python is a general-purpose programming language that is becoming more and more popular for doing data science. Companies worldwide are using Python to harvest insights from their data and get a competitive edge. Unlike any other Python tutorial, this course focuses on Python specifically for data science. In our Intro to Python class, you will learn about powerful ways to store and manipulate data as well as cool data science tools to start your own analyses. Enter DataCamp’s online Python curriculum.
+
+    1
+    Python Basics
+
+    An introduction to the basic concepts of Python. Learn how to use Python both interactively and through a script. Create your first variables and acquaint yourself with Python's basic data types.
+    View Chapter Details
+
+2
+Python Lists
+
+Learn to store, access and manipulate data in lists: the first step towards efficiently working with huge amounts of data.
+View Chapter Details
+3
+Functions and Packages
+
+To leverage the code that brilliant Python developers have written, you'll learn about using functions, methods and packages. This will help you to reduce the amount of code you need to solve challenging problems!
+View Chapter Details
+4
+NumPy
+
+NumPy is a Python package to efficiently do data science. Learn to work with the NumPy array, a faster and more powerful alternative to the list, and take your first steps in data exploration.
+View Chapter Details
+
+Learn
+
+    Courses
+    Skill Tracks
+    Career Tracks
+    Pricing
+    Become an Instructor
+
+Resources
+
+    Community
+    RDocumentation
+    Course Editor
+    Upcoming Courses
+    Support
+
+Plans
+
+    For Business
+    For Classrooms
+
+About
+
+    Stories
+    Careers
+    Contact
+    Press
+    Privacy Policy
+    Terms of Use
+
+Logo full filled white
+
+DataCamp offers interactive R, Python, Sheets, SQL and shell courses. All on topics in data science, statistics and machine learning. Learn from a team of expert teachers in the comfort of your browser with video lessons and fun coding challenges and projects.
+About the company
+
+App store badge Play store badge
+© 2019 DataCamp Inc.

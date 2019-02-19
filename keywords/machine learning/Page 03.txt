@@ -1,0 +1,126 @@
+TechTargetSearch the TechTarget Network
+LOGIN REGISTER
+TECHTARGET NETWORKNEWSFEATURESTIPSMORE CONTENT
+SearchEnterpriseAI
+TOPIC
+Machine learning platforms
+SUBTOPIC
+All Subtopics
+Follow:
+Essential GuideNot every organization can play Language processing is natural Don't expect any autonomous robo-admins
+This content is part of the Essential Guide:
+AI in IT tools promises better, faster, stronger ops
+DEFINITION
+machine learning (ML)
+
+Posted by: Margaret Rouse
+WhatIs.com
+
+Contributor(s): Ed Burns
+Machine learning (ML) is a category of algorithm that allows software applications to become more accurate in predicting outcomes without being explicitly programmed. The basic premise of machine learning is to build algorithms that can receive input data and use statistical analysis to predict an output while updating outputs as new data becomes available.
+
+DOWNLOAD THIS FREE GUIDE
+
+Free AI Buyer's Guide
+We designed this expert guide to help you better understand all of the considerations for building and maintaining the infrastructure and engine that support the initiatives. Plus, learn about the products and players to help you make the best buying decision.
+
+Corporate E-mail Address:
+
+I agree to TechTarget’s Terms of Use, Privacy Policy, and the transfer of my information to the United States for processing to provide me with relevant information as described in our Privacy Policy.
+
+I agree to my information being processed by TechTarget and its Partners to contact me via phone, email, or other means regarding information relevant to my professional interests. I may unsubscribe at any time.
+The processes involved in machine learning are similar to that of data mining and predictive modeling. Both require searching through data to look for patterns and adjusting program actions accordingly. Many people are familiar with machine learning from shopping on the internet and being served ads related to their purchase. This happens because recommendation engines use machine learning to personalize online ad delivery in almost real time. Beyond personalized marketing, other common machine learning use cases include fraud detection, spam filtering, network security threat detection, predictive maintenance and building news feeds.
+
+How machine learning works
+Machine learning algorithms are often categorized as supervised or unsupervised. Supervised algorithms require a data scientist or data analyst with machine learning skills to provide both input and desired output, in addition to furnishing feedback about the accuracy of predictions during algorithm training. Data scientists determine which variables, or features, the model should analyze and use to develop predictions. Once training is complete, the algorithm will apply what was learned to new data.
+
+Unsupervised algorithms do not need to be trained with desired outcome data. Instead, they use an iterative approach called deep learning to review data and arrive at conclusions. Unsupervised learning algorithms -- also called neural networks -- are used for more complex processing tasks than supervised learning systems, including image recognition, speech-to-text and natural language generation. These neural networks work by combing through millions of examples of training data and automatically identifying often subtle correlations between many variables. Once trained, the algorithm can use its bank of associations to interpret new data. These algorithms have only become feasible in the age of big data, as they require massive amounts of training data.
+
+The machine learning process
+Examples of machine learning
+Machine learning is being used in a wide range of applications today. One of the most well-known examples is Facebook's News Feed. The News Feed uses machine learning to personalize each member's feed. If a member frequently stops scrolling to read or like a particular friend's posts, the News Feed will start to show more of that friend's activity earlier in the feed. Behind the scenes, the software is simply using statistical analysis and predictive analytics to identify patterns in the user's data and use those patterns to populate the News Feed. Should the member no longer stop to read, like or comment on the friend's posts, that new data will be included in the data set and the News Feed will adjust accordingly.
+
+Machine learning is also entering an array of enterprise applications. Customer relationship management (CRM) systems use learning models to analyze email and prompt sales team members to respond to the most important messages first. More advanced systems can even recommend potentially effective responses. Business intelligence (BI) and analytics vendors use machine learning in their software to help users automatically identify potentially important data points. Human resource (HR) systems use learning models to identify characteristics of effective employees and rely on this knowledge to find the best applicants for open positions.
+
+Machine learning also plays an important role in self-driving cars. Deep learning neural networks are used to identify objects and determine optimal actions for safely steering a vehicle down the road.
+
+Machine learning vs. deep learning
+Virtual assistant technology is also powered through machine learning. Smart assistants combine several deep learning models to interpret natural speech, bring in relevant context -- like a user's personal schedule or previously defined preferences -- and take an action, like booking a flight or pulling up driving directions.
+
+Types of machine learning algorithms
+Just as there are nearly limitless uses of machine learning, there is no shortage of machine learning algorithms. They range from the fairly simple to the highly complex. Here are a few of the most commonly used models:
+
+This class of machine learning algorithm involves identifying a correlation -- generally between two variables -- and using that correlation to make predictions about future data points.
+Decision trees. These models use observations about certain actions and identify an optimal path for arriving at a desired outcome.
+K-means clustering. This model groups a specified number of data points into a specific number of groupings based on like characteristics.
+Neural networks. These deep learning models utilize large amounts of training data to identify correlations between many variables to learn to process incoming data in the future.
+Reinforcement learning. This area of deep learning involves models iterating over many attempts to complete a process. Steps that produce favorable outcomes are rewarded and steps that produce undesired outcomes are penalized until the algorithm learns the optimal process.
+The future of machine learning
+While machine learning algorithms have been around for decades, they've attained new popularity as artificial intelligence (AI) has grown in prominence. Deep learning models in particular power today's most advanced AI applications.
+
+
+
+Machine learning platforms are among enterprise technology's most competitive realms, with most major vendors, including Amazon, Google, Microsoft, IBM and others, racing to sign customers up for platform services that cover the spectrum of machine learning activities, including data collection, data preparation, model building, training and application deployment. As machine learning continues to increase in importance to business operations and AI becomes ever more practical in enterprise settings, the machine learning platform wars will only intensify.
+
+Continued research into deep learning and AI is increasingly focused on developing more general applications. Today's AI models require extensive training in order to produce an algorithm that is highly optimized to perform one task. But some researchers are exploring ways to make models more flexible and able to apply context learned from one task to future, different tasks.
+
+This was last updated in May 2018
+Next Steps
+Why machine learning models require a failover plan
+
+Continue Reading About machine learning (ML)
+Big data can lead to biased decision-making in machine learning
+Putting machine learning into production is one of the biggest challenges
+How one insurer is using machine learning to change driver behavior
+Experienced machine learning discuss how they implemented the technology
+Machine learning versus traditional algorithms
+Related Terms
+bag of words model (BoW model)
+The bag of words model (BoW model) is a reduced and simplified representation of a text document with selected parts of the text. See complete definition
+convolutional neural network
+A convolutional neural network (CNN) is a type of artificial neural network used in image recognition and processing that is ... See complete definition
+facial recognition
+Facial recognition is a category of biometric software that maps an individual's facial features mathematically and stores the ... See complete definition
+Join the conversation 5 comments
+
+ Send me notifications when other members comment.
+Add My Comment
+Oldest
+[-] Margaret Rouse - 19 Feb 2016 10:49 AM
+How does your enterprise plan to implement machine learning?
+
+[-] AnonymousUser - 23 Oct 2016 9:22 PM
+How the machine learning will affect the QA people ?
+
+[-] iamrizwan - 24 Jun 2017 3:56 PM
+But, isn't it programmed to do so...its just that It will behave in the same manner for different set of users and their friends.
+
+[-] shahul11 - 20 Dec 2018 2:21 PM
+Machine Learning is simply making a computer perform a task without explicitly programming it. In today’s world, every system that does well has a machine Learning algorithm at its heart. Take for example Google Search Engine, Amazon Product recommendations, LinkedIn, Facebook etc. All these systems have machine learning algorithms embedded in their systems in one form of the other. They are efficiently utilizing data collected from various channels which helps them get a bigger picture of what they are doing and what they should do.
+
+[-] CharliMdl - 2 Jan 2019 3:04 AM
+I would request you to write more this type of article.
+
+File Extensions and File Formats
+ABCDEFGHIJKLMNOPQRSTUVWXYZ#
+Powered by:
+Latest TechTarget
+resources
+BUSINESS ANALYTICS
+CRM
+CIO
+DATA MANAGEMENT
+ERP
+SearchBusinessAnalytics
+Better sentiment analysis can bolster customer data analytics
+Customer data analytics are easy to gather in the social media era -- but they can be misleading if based on sentiment analysis ...
+
+Qlik's CrunchBot acquisition adds AI chatbot to analytics
+Qlik's acquisition of CrunchBot, an AI chatbot, aims to help users of its BI software get data easier and underscores a growing ...
+
+IT managers look to deploy BI, analytics in the cloud
+More organizations plan to use cloud-based BI and analytics and focus on data governance and predictive analytics, TechTarget's ...
+
+BACKGROUND IMAGE: iSTOCK/GETTY IMAGES About UsMeet The EditorsContact UsPrivacy PolicyAdvertisersBusiness PartnersMedia KitCorporate SiteContributorsReprintsArchiveSite MapAnswersDefinitionsE-ProductsEventsFeaturesGuidesOpinionsPhoto StoriesQuizzesTipsTutorialsVideos
+All Rights Reserved, Copyright 2018 - 2019, TechTarget
+

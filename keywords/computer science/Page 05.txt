@@ -1,0 +1,93 @@
+
+Skip to main content
+Main content
+Search
+Donate
+Login
+Sign up
+Computing
+Computer science
+Start from the basics
+Learn the basics, starting with Intro to algorithms
+
+    Course summary
+    Algorithms
+    Journey into cryptography
+    Journey into information theory
+    How Computers Work
+    Internet 101
+
+Algorithms
+Intro to algorithms: AlgorithmsBinary search: AlgorithmsAsymptotic notation: AlgorithmsSelection sort: AlgorithmsInsertion sort: AlgorithmsRecursive algorithms: Algorithms
+Towers of Hanoi: AlgorithmsMerge sort: AlgorithmsQuick sort: AlgorithmsGraph representation: AlgorithmsBreadth-first search: AlgorithmsFurther learning: Algorithms
+Journey into cryptography
+Ancient cryptography: Journey into cryptographyCiphers: Journey into cryptographyCryptography challenge 101: Journey into cryptography
+Modern cryptography: Journey into cryptographyModular arithmetic: Journey into cryptographyPrimality test: Journey into cryptographyRandomized algorithms: Journey into cryptography
+Journey into information theory
+Ancient information theory: Journey into information theoryModern information theory: Journey into information theory
+How Computers Work
+Introducing How Computers Work: How Computers WorkWhat Makes a Computer, a Computer?: How Computers WorkBinary & Data: How Computers Work
+Circuits & Logic: How Computers WorkCPU, Memory, Input & Output: How Computers WorkHardware and Software: How Computers Work
+Internet 101
+How the internet works: Internet 101
+Community
+Recommended
+5:28
+What is an algorithm and why should you care?
+Intro to algorithms
+Article
+A guessing game
+Intro to algorithms
+Article
+Route-finding
+Intro to algorithms
+Article
+Discuss: Algorithms in your life
+Intro to algorithms
+Article
+Binary search
+Binary search
+Get Started
+Intro to algorithms
+What are algorithms and why should you care? We'll start with an overview of algorithms and then discuss two games that you could use an algorithm to solve more efficiently - the number guessing game and a route-finding game.
+Community questions
+Site Navigation
+
+Our mission is to provide a free, world-class education to anyone, anywhere.
+
+Khan Academy is a 501(c)(3) nonprofit organization. Donate or volunteer today!
+
+    About
+        News
+        Impact
+        Our team
+        Our interns
+        Our content specialists
+        Our leadership
+        Our supporters
+        Our contributors
+        Careers
+        Internships
+    Contact
+        Help center
+        Support community
+        Share your story
+        Press
+    Download our apps
+        iOS app
+        Android app
+    Courses
+        Math
+        Math - India
+        Learn in Hindi (New)
+        Science - India
+        Science & engineering
+        Computing
+        Arts & humanities
+        Economics & finance
+        Test prep
+
+Language
+© 2019 Khan Academy
+Terms of use
+Privacy Policy

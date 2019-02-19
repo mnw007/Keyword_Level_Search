@@ -1,0 +1,72 @@
+Homepage
+Towards Data Science
+HOMEDATA SCIENCEMACHINE LEARNINGPROGRAMMINGVISUALIZATIONAIJOURNALISMPICKSCONTRIBUTE
+Machine Learning
+Learning to Drive Smoothly in Minutes
+Learning to Drive Smoothly in Minutes
+Reinforcement Learning on a Small Racing Car
+Go to the profile of Antonin RAFFIN
+Antonin RAFFIN
+Jan 27
+My journey applying AI to horse racing
+My journey applying AI to horse racing
+My experiences from a year of learning by applying AI to harness racing. I learned that it is not all that hard to get started.
+Go to the profile of Said Aspen
+Said Aspen
+Jan 29
+Top Stories in Machine Learning
+Evaluating Text Output in NLP: BLEU at your own risk
+Evaluating Text Output in NLP: BLEU at your own risk
+One question I get fairly often from folks who are just getting into NLP is how to evaluate systems when the output of that system is text…
+Go to the profile of Rachael Tatman
+Rachael Tatman
+Jan 15
+How to visualize convolutional features in 40 lines of code
+How to visualize convolutional features in 40 lines of code
+Developing techniques to interpret convnets is an important field of research. This article explains how you can visualize their features.
+Go to the profile of Fabio M. Graetz
+Fabio M. Graetz
+Jan 20
+Handling imbalanced datasets in machine learning
+Handling imbalanced datasets in machine learning
+What should and should not be done when facing an imbalanced classes problem?
+Go to the profile of Baptiste Rocca
+Baptiste Rocca
+Jan 27
+Latest
+Creation of Sentence Embeddings Based on Topical Word Representations
+Creation of Sentence Embeddings Based on Topical Word Representations
+An approach towards universal language understanding
+Go to the profile of Phillip Wenig
+Phillip Wenig
+Jan 31
+Reinforcement Learning and Deep Reinforcement Learning with Tic Tac Toe
+Reinforcement Learning and Deep Reinforcement Learning with Tic Tac Toe
+In this article I want to share my project on implementing reinforcement learning and deep reinforcement learning methods on a Tic Tac Toe…
+Go to the profile of Gilad Wisney
+Gilad Wisney
+Jan 28
+A Dog Detector and Breed Classifier
+A Dog Detector and Breed Classifier
+In a field like physics, things keep getting harder, to the point that it’s very difficult to understand what’s going on at the cutting…
+Go to the profile of Henry Dashwood
+Henry Dashwood
+Jan 29
+Effectively Pre-processing the Text Data Part 1: Text Cleaning
+Effectively Pre-processing the Text Data Part 1: Text Cleaning
+The content of this article is directly inspired from the books “Deep Learning with Python” by Francois Chollet, and “An Introduction to…
+Go to the profile of Ali Hamza
+Ali Hamza
+Jan 30
+Linear Discriminant Analysis (LDA) 101, using R
+Linear Discriminant Analysis (LDA) 101, using R
+Decision boundaries, separations, classification and more. Let’s dive into LDA!
+Go to the profile of Peter Nistrup
+Peter Nistrup
+Jan 31
+Using OpenStreetMap tiles for Machine Learning
+Using OpenStreetMap tiles for Machine Learning
+Extract features automatically using convolutional networks
+Go to the profile of Robert Kyle
+Robert Kyle
+Jan 31

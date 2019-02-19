@@ -1,0 +1,419 @@
+
+Home
+Search Silicon IP
+Search Verification IP
+Latest News
+Industry Articles
+Industry Expert Blogs
+Videos
+Slides
+Events
+≡ Menu Design And Reuse
+Login
+|
+Subscribe
+Company
+|
+design-reuse.cn
+|
+dr-embedded.com
+|
+D&R Products
+|
+
+Login
+|
+Subscribe to D&R SoC News Alert
+Design And Reuse
+Search IP
+Categories
+Silicon IP
+Analog & Mixed Signal
+Storage Controller & PHY
+Graphic & Peripheral
+Interface Controller & PHY
+Processors & Microcontrollers
+Memory & Logic Library
+Security
+Multimedia
+Wireline Communication
+Wireless Communication
+Silicon IP Vendors
+ 
+Verification IP
+Search / Browse
+Verification IP Vendors
+Software IP
+Search / Browse
+Software IP Vendors
+ 
+ 
+Additional Services
+Wanted IPs
+IP Analytics
+Featured Products
+Innosilicon Technology Ltd
+USB 2.0 PHY Device/Host/OTG/Hub
+
+Seamless Microsystems, Inc.
+800MHz, 12-bit Continuous time Delta Sigma ADC
+
+Synopsys, Inc.
+PCIe 2.0 PHY, TSMC 16FFC, FFPGL, FFPL x1, x2, x4, x8 North/South (vertical) poly orientation
+
+Mobile Semiconductor Corporation
+Single Port, Ultra High Speed, GF 22FDX, SRAM Memory Compiler
+
+News
+Categories
+IP/SoC Products
+Embedded Systems
+Foundries
+FPGA
+Fabless / IDM
+Deals
+Legal
+Business
+Financial Results
+People
+Commentary / Analysis
+20 Most Popular News
+Latest News
+hardent-xilinx-8k-ready-displayport-1-4-ip-subsystem
+Hardent and Xilinx Collaborate to Deliver Complete 8K Ready DisplayPort 1.4 IP Subsystem
+
+Thursday Jan. 31, 2019
+andes-andesight-risc-v-ide-free-download
+Feature-rich RISC-V IDE Available for Free Download
+
+Thursday Jan. 31, 2019
+rambus-gddr6-memory-phy-tsmc-7nm
+Rambus Announces Tapeout of GDDR6 Memory PHY on TSMC 7nm Process Technology
+
+Wednesday Jan. 30, 2019
+Industry Articles
+Categories
+IP/SoC Products
+Embedded Systems
+Foundries
+FPGA
+Business
+20 Most Popular Articles
+Featured Articles
+capless-low-dropout-ldo-voltage-regulator-architectures
+The Tradeoffs of Low Dropout (LDO) Voltage Regulator Architectures and the Advantages of "Capless" LDOs
+
+Monday Jan. 28, 2019
+secure-soc-for-security-aware-applications
+Secure SOC for Security Aware Applications
+
+Monday Jan. 14, 2019
+bulletproofing-pcie-based-soc-reliability-availability-serviceability-ras-mechanism
+Bulletproofing PCIe-based SoCs with Advanced Reliability, Availability, Serviceability (RAS) Mechanisms
+
+Wednesday Dec. 19, 2018
+Blogs
+Industry Expert Blogs
+synopsys-embedded-vision-ev-ip-robot-farmers
+Synopsys Embedded Vision EV IP and Robot Farmers
+
+To USB or Not to USB: A USB IP Blog - Eric Huang, Synopsys
+dynamic-hdr-in-hdmi-2-1
+Dynamic HDR in HDMI 2.1: The Ideal Display for TV and Mobiles
+
+VIP Experts Blog - Synopsys
+accelerating-open-source-llvm-development
+Accelerating open source LLVM development
+
+arm Blogs - Leandro Nunes, arm
+Videos
+Slides
+Events
+IP-SOC Days 2018 IP-SOC 2018 Archives
+IP-SOC 2016
+IP-SOC 2015
+IP-SOC 2014
+IP-SOC 2013
+IP-SOC 2012
+IP-SOC 2011
+IP-SOC 2010
+Choose a filter
+Full Site Search
+Silicon IP
+Verification IP
+Software IP
+News
+Industry Articles
+ 
+Dynamic Memory Allocation and Fragmentation in C and C++
+Colin Walls, Mentor Graphics
+Newbury UK
+
+Abstract:
+
+In C and C++, it can be very convenient to allocate and de-allocate blocks of memory as and when needed. This is certainly standard practice in both languages and almost unavoidable in C++. However, the handling of such dynamic memory can be problematic and inefficient. For desktop applications, where memory is freely available, these difficulties can be ignored. For embedded - generally real time - applications, ignoring the issues is not an option.
+
+Dynamic memory allocation tends to be nondeterministic; the time taken to allocate memory may not be predictable and the memory pool may become fragmented, resulting in unexpected allocation failures. In this session the problems will be outlined in detail and an approach to deterministic dynamic memory allocation detailed.
+
+C/C++ Memory Spaces
+
+It may be useful to think in terms of data memory in C and C++ as being divided into three separate spaces:
+
+Static memory. This is where variables, which are defined outside of functions, are located. The keyword static does not generally affect where such variables are located; it specifies their scope to be local to the current module. Variables that are defined inside of a function, which are explicitly declared static, are also stored in static memory. Commonly, static memory is located at the beginning of the RAM area. The actual allocation of addresses to variables is performed by the embedded software development toolkit: a collaboration between the compiler and the linker. Normally, program sections are used to control placement, but more advanced techniques, like Fine Grain Allocation, give more control. Commonly, all the remaining memory, which is not used for static storage, is used to constitute the dynamic storage area, which accommodates the other two memory spaces.
+
+Automatic variables. Variables defined inside a function, which are not declared static, are automatic. There is a keyword to explicitly declare such a variable – auto – but it is almost never used. Automatic variables (and function parameters) are usually stored on the stack. The stack is normally located using the linker. The end of the dynamic storage area is typically used for the stack. Compiler optimizations may result in variables being stored in registers for part or all of their lifetimes; this may also be suggested by using the keyword register.
+
+The heap. The remainder of the dynamic storage area is commonly allocated to the heap, from which application programs may dynamically allocate memory, as required.
+
+Dynamic Memory in C
+
+In C, dynamic memory is allocated from the heap using some standard library functions. The two key dynamic memory functions are malloc() and free().
+
+The malloc() function takes a single parameter, which is the size of the requested memory area in bytes. It returns a pointer to the allocated memory. If the allocation fails, it returns NULL. The prototype for the standard library function is like this:
+
+          void *malloc(size_t size);
+
+The free() function takes the pointer returned by malloc() and de-allocates the memory. No indication of success or failure is returned. The function prototype is like this:
+
+          void free(void *pointer);
+
+To illustrate the use of these functions, here is some code to statically define an array and set the fourth element’s value:
+
+         int my_array[10];
+         my_array[3] = 99;
+
+The following code does the same job using dynamic memory allocation:
+
+         int *pointer;
+         pointer = malloc(10 * sizeof(int));
+         *(pointer+3) = 99;
+
+The pointer de-referencing syntax is hard to read, so normal array referencing syntax may be used, as [ and ] are just operators:
+
+          pointer[3] = 99;
+
+When the array is no longer needed, the memory may be de-allocated thus:
+
+       free(pointer); 
+       pointer = NULL;
+
+Assigning NULL to the pointer is not compulsory, but is good practice, as it will cause an error to be generated if the pointer is erroneous utilized after the memory has been de-allocated.
+
+The amount of heap space actually allocated by malloc() is normally one word larger than that requested. The additional word is used to hold the size of the allocation and is for later use by free(). This “size word” precedes the data area to which malloc() returns a pointer.
+
+There are two other variants of the malloc() function: calloc() and realloc().
+
+The calloc() function does basically the same job as malloc(), except that it takes two parameters – the number of array elements and the size of each element – instead of a single parameter (which is the product of these two values). The allocated memory is also initialized to zeros. Here is the prototype:
+
+          void *calloc(size_t nelements, size_t elementSize);
+
+The realloc() function resizes a memory allocation previously made by malloc(). It takes as parameters a pointer to the memory area and the new size that is required. If the size is reduced, data may be lost. If the size is increased and the function is unable to extend the existing allocation, it will automatically allocate a new memory area and copy data across. In any case, it returns a pointer to the allocated memory. Here is the prototype:
+
+void *realloc(void *pointer, size_t size);
+
+Dynamic Memory in C++
+
+Management of dynamic memory in C++ is quite similar to C in most respects. Although the library functions are likely to be available, C++ has two additional operators – new and delete – which enable code to be written more clearly, succinctly and flexibly, with less likelihood of errors. The new operator can be used in three ways:
+
+        p_var = new typename;
+        p_var = new type(initializer);
+        p_array = new type [size];
+
+In the first two cases, space for a single object is allocated; the second one includes initialization. The third case is the mechanism for allocating space for an array of objects.
+
+The delete operator can be invoked in two ways:
+
+          delete p_var;
+          delete[] p_array;
+
+The first is for a single object; the second deallocates the space used by an array. It is very important to use the correct de-allocator in each case.
+
+There is no operator that provides the functionality of the C realloc() function.
+
+Here is the code to dynamically allocate an array and initialize the fourth element:
+
+      int* pointer;
+      pointer = new int[10];
+      pointer[3] = 99;
+
+Using the array access notation is natural. De-allocation is performed thus:
+
+      delete[] pointer;
+      pointer = NULL;
+
+Again, assigning NULL to the pointer after deallocation is just good programming practice. Another option for managing dynamic memory in C++ is the use the Standard Template Library. This may be inadvisable for real time embedded systems.
+
+Issues and Problems
+
+As a general rule, dynamic behavior is troublesome in real time embedded systems. The two key areas of concern are determination of the action to be taken on resource exhaustion and nondeterministic execution performance.
+
+There are a number of problems with dynamic memory allocation in a real time system. The standard library functions (malloc() and free()) are not normally reentrant, which would be problematic in a multithreaded application. If the source code is available, this should be straightforward to rectify by locking resources using RTOS facilities (like a semaphore). A more intractable problem is associated with the performance of malloc(). Its behavior is unpredictable, as the time it takes to allocate memory is extremely variable. Such nondeterministic behavior is intolerable in real time systems.
+
+Without great care, it is easy to introduce memory leaks into application code implemented using malloc() and free(). This is caused by memory being allocated and never being deallocated. Such errors tend to cause a gradual performance degradation and eventual failure. This type of bug can be very hard to locate.
+
+Memory allocation failure is a concern. Unlike a desktop application, most embedded systems do not have the opportunity to pop up a dialog and discuss options with the user. Often, resetting is the only option, which is unattractive. If allocation failures are encountered during testing, care must be taken with diagnosing their cause. It may be that there is simply insufficient memory available – this suggests various courses of action. However, it may be that there is sufficient memory, but not available in one contiguous chunk that can satisfy the allocation request. This situation is called memory fragmentation.
+
+Memory Fragmentation
+
+The best way to understand memory fragmentation is to look at an example. For this example, it is assumed hat there is a 10K heap. First, an area of 3K is requested, thus:
+
+         #define K (1024)
+         char *p1;
+         p1 = malloc(3*K);
+
+Then, a further 4K is requested:
+
+        p2 = malloc(4*K);
+
+3K of memory is now free.
+
+Some time later, the first memory allocation, pointed to by p1, is de-allocated:
+
+        free(p1);
+
+This leaves 6K of memory free in two 3K chunks. A further request for a 4K allocation is issued:
+
+       p1 = malloc(4*K);
+
+This results in a failure – NULL is returned into p1 – because, even though 6K of memory is available, there is not a 4K contiguous block available. This is memory fragmentation.
+
+It would seem that an obvious solution would be to de-fragment the memory, merging the two 3K blocks to make a single one of 6K. However, this is not possible because it would entail moving the 4K block to which p2 points. Moving it would change its address, so any code that has taken a copy of the pointer would then be broken. In other languages (such as Visual Basic, Java and C#), there are defragmentation (or “garbage collection”) facilities. This is only possible because these languages do not support direct pointers, so moving the data has no adverse effect upon application code. This defragmentation may occur when a memory allocation fails or there may be a periodic garbage collection process that is run. In either case, this would severely compromise real time performance and determinism.
+
+Memory with an RTOS
+
+A real time operating system may provide a service which is effectively a reentrant form of malloc(). However, it is unlikely that this facility would be deterministic.
+
+Memory management facilities that are compatible with real time requirements – i.e. they are deterministic – are usually provided. This is most commonly a scheme which allocates blocks – or “partitions” – of memory under the control of the OS.
+
+Block/partition Memory Allocation
+
+Typically, block memory allocation is performed using a “partition pool”, which is defined statically or dynamically and configured to contain a specified number of blocks of a specified fixed size. For Nucleus OS, the API call to define a partition pool has the following prototype:
+
+  STATUS
+   NU_Create_Partition_Pool (NU_PAR TITION_POOL *pool, CHAR *name, VOID *start_address, UNSIGNED pool_size, UNSIGNED partition_size, OPTION suspend_type);
+
+This is most clearly understood by means of an example:
+
+   status = NU_Create_Partition_Pool(&MyPoo l, "any name", (VOID *) 0xB000, 2000, 40, NU_FIFO);
+
+This creates a partition pool with the descriptor MyPool, containing 2000 bytes of memory, filled with partitions of size 40 bytes (i.e. there are 50 partitions). The pool is located at address 0xB000. The pool is configured such that, if a task attempts to allocate a block, when there are none available, and it requests to be suspended on the allocation API call, suspended tasks will be woken up in a first-in, first-out order. The other option would have been task priority order.
+
+Another API call is available to request allocation of a partition. Here is an example using Nucleus OS:
+
+      status = NU_Allocate_Partition(&MyPool, &ptr, NU_SUSPEND);
+
+This requests the allocation of a partition from MyPool. When successful, a pointer to the allocated block is returned in ptr. If no memory is available, the task is suspended, because NU_SUSPEND was specified; other options, which may have been selected, would have been to suspend with a timeout or to simply return with an error.
+
+When the partition is no longer required, it may be de-allocated thus:
+
+      status = NU_Deallocate_Partition(ptr);
+
+If a task of higher priority was suspended pending availability of a partition, it would now be run. There is no possibility for fragmentation, as only fixed size blocks are available. The only failure mode is true resource exhaustion, which may be controlled and contained using task suspend, as shown.
+
+Additional API calls are available which can provide the application code with information about the status of the partition pool – for example, how many free partitions are currently available. Care is required in allocating and de-allocating partitions, as the possibility for the introduction of memory leaks remains.
+
+Memory Leak Detection
+
+The potential for programmer error resulting in a memory leak when using partition pools is recognized by vendors of real time operating systems. Typically, a profiler tool is available which assists with the location and rectification of such bugs.
+
+Real Time Memory Solutions
+
+Having identified a number of problems with dynamic memory behavior in real time systems, some possible solutions and better approaches can be proposed.
+
+Dynamic Memory
+
+It is possible to use partition memory allocation to implement malloc() in a robust and deterministic fashion. The idea is to define a series of partition pools with block sizes in a geometric progression; e.g. 32, 64, 128, 256 bytes. A malloc() function may be written to deterministically select the correct pool to provide enough space for a given allocation request. This approach takes advantage of the deterministic behavior of the partition allocation API call, the robust error handling (e.g. task suspend) and the immunity from fragmentation offered by block memory.
+
+Conclusions
+
+C and C++ use memory in various ways, both static and dynamic. Dynamic memory includes stack and heap.
+
+Dynamic behavior in embedded real time systems is generally a source of concern, as it tends to be non-deterministic and failure is hard to contain.
+
+Using the facilities provided by most real time operating systems, a dynamic memory facility may be implemented which is deterministic, immune from fragmentation and with good error handling.
+
+
+
+
+
+
+   	
+Contact Mentor Graphics
+Fill out this form for contacting a Mentor Graphics representative.
+
+Your Name:	
+Your E-mail address:	
+Your Company address:	
+Your Phone Number:	
+Write your message:
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+Search Silicon IP
+16,000 IP Cores from 450 Vendors
+
+ 
+Related Articles
+Deterministic dynamic memory allocation & fragmentation in C & C++
+Architecture-oriented C optimization, part 2: Memory and more
+Improving reliability of non-volatile memory systems
+Demystifying MIPI C-PHY / DPHY Subsystem
+A design of High Efficiency Combo-Type Architecture of MIPI D-PHY and C-PHY
+ 
+See Mentor Graphics Latest Articles >>
+New Articles
+Design patterns in SystemVerilog OOP for UVM verification
+The Four Characteristics of an Optimal Inferencing Engine
+The Tradeoffs of Low Dropout (LDO) Voltage Regulator Architectures and the Advantages of "Capless" LDOs
+Secure SOC for Security Aware Applications
+ 
+See New Articles >>
+Most Popular
+Dynamic Memory Allocation and Fragmentation in C and C++
+A Review Paper on CMOS, SOI and FinFET Technology
+Why using Single Root I/O Virtualization (SR-IOV) can help improve I/O performance and Reduce Costs
+Design Rule Checks (DRC) - A Practical View for 28nm Technology
+How to calculate CPU utilization
+ 
+See the Top 20 >>
+ 	E-mail This Article		 	Printer-Friendly Page
+
+
+
+
+
+
+© 2019 Design And Reuse
+
+All Rights Reserved.
+
+No portion of this site may be copied, retransmitted, reposted, duplicated or otherwise used without the express written permission of Design And Reuse.
+
+Partner with us
+Visit our new Partnership Portal for more information. 
+
+
+Partner with us
+List your Products
+Suppliers, list your IPs for free.
+
+
+List your Products
+Design-Reuse.com
+Contact Us
+About us
+D&R Partner Program
+Advertise with Us
+Privacy Policy

@@ -1,0 +1,95 @@
+
+tutorialspoint
+
+    Jobs
+     Examples
+    Whiteboard  Whiteboard
+     Net Meeting
+    Tools
+     Articles
+        Facebook
+        Google+
+        Twitter
+        Linkedin
+        YouTube
+
+    Home
+    Q/A
+    Library
+    Videos
+    Tutors
+    Coding Ground
+    Store
+    Search
+
+Python Tutorial
+
+    Python Basic Tutorial
+    Python - Home
+    Python - Overview
+    Python - Environment Setup
+    Python - Basic Syntax
+    Python - Variable Types
+    Python - Basic Operators
+    Python - Decision Making
+    Python - Loops
+    Python - Numbers
+    Python - Strings
+    Python - Lists
+    Python - Tuples
+    Python - Dictionary
+    Python - Date & Time
+    Python - Functions
+    Python - Modules
+    Python - Files I/O
+    Python - Exceptions
+
+    Python Advanced Tutorial
+    Python - Classes/Objects
+    Python - Reg Expressions
+    Python - CGI Programming
+    Python - Database Access
+    Python - Networking
+    Python - Sending Email
+    Python - Multithreading
+    Python - XML Processing
+    Python - GUI Programming
+    Python - Further Extensions
+
+    Python Useful Resources
+    Python - Questions and Answers
+    Python - Quick Guide
+    Python - Tools/Utilities
+    Python - Useful Resources
+    Python - Discussion
+
+    Selected Reading
+    UPSC IAS Exams Notes
+    Developer's Best Practices
+    Questions and Answers
+    Effective Resume Writing
+    HR Interview Questions
+    Computer Glossary
+    Who is Who
+
+Python Tutorial
+Previous Page
+Next Page  
+Python - Tutorial
+
+Python is a general-purpose interpreted, interactive, object-oriented, and high-level programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL). This tutorial gives enough understanding on Python programming language.
+Audience
+
+This tutorial is designed for software programmers who need to learn Python programming language from scratch.
+Prerequisites
+
+You should have a basic understanding of Computer Programming terminologies. A basic understanding of any of the programming languages is a plus.
+Previous Page
+Print
+Next Page  
+img img img img img img
+Tutorials Point
+
+    FAQ's Cookies Policy Contact 
+
+© Copyright 2019. All Rights Reserved.

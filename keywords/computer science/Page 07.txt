@@ -1,0 +1,358 @@
+
+Academic Earth
+
+    Online Degrees
+    Courses
+        Accounting
+        Art History
+        Biology
+        Business
+        Chemistry
+        Computer Science
+        Economics
+        Education
+        Engineering
+        Finance
+        Healthcare Administration
+        Management
+        Mathematics
+        Marketing
+        Physics
+        Psychology
+        Social Work
+        Sociology
+    Universities
+        Carnegie Mellon University
+        Columbia University
+        Cornell University
+        Dartmouth College
+        Johns Hopkins University
+        Massachusetts Institute of Technology
+        New York University
+        Princeton University
+        Stanford University
+        University of California, Berkeley
+        University of Notre Dame
+        University of Oxford
+        Yale University
+    Playlists
+    Video Electives
+
+Search Site
+Free Online Lectures and Courses for Computer Science
+Find an Accredited College
+Sponsored Schools
+Computer Science Content Navigation
+
+    Open Courses
+    Journals/Trade Magazines
+    Grants and Scholarships
+    Internships
+    Student & Professional Organizations
+
+In its purest form, computer science is the research and development of technology that solves specific problems. Computer science has brought the world smart phones, GPS systems, the gaming industry and tablet computing, along with technological developments that assist government, industry and medicine. In addition to creating new technology, computer scientists also make improvements to existing technology and study the ways computers can make our lives easier.
+
+As with any branch of science, computer scientists perform research that establishes new information. This research begins with known mathematical algorithms and computer theory, and strives to constantly redefine what technology can do for us. Computer science also addresses how existing technology can be used in ways previously undiscovered, creating applications that may be faster, simpler, more efficient or less costly.
+
+Exploring fundamental questions about computation is the first step toward designing the hardware, software and complex network systems that we rely upon. Some computer scientists focus entirely on theory, some concentrate on programming and still others work on user applications. The end result of this research includes new tools and methodologies that drive better business practice, scientific applications and social networking.
+Sample Courses
+
+During the first two years of a standard 4-year program, students focus on the basics:
+
+    Calculus I, II, & III
+    Program Design
+    Foundations of Computing
+    Data Structure
+    Introduction to Algorithms
+    Computer Architecture
+    Information Retrieval
+    Computer Graphics
+
+Typical core courses in a Bachelor of Science in Computer Science are taken in the third and fourth year, and may include the following:
+
+    Algorithm Design and Analysis
+    Technical Writing
+    Database Construction
+    Object-Oriented Software
+    Compilation
+    Artificial Intelligence: Control and Planning
+    Mobile Applications
+    Wireless Networks
+    Software Engineering
+    Data Mining Methodology
+
+Possible Specializations
+
+Specialization within computer science generally falls into one of three categories: hardware, software or robotics.
+
+Hardware refers to the machinery of computers. Hardware consists of the processors and chips that send, receive and process information. It can also extend to peripherals that function outside of the computer, like printers, disk drives, monitors, keyboards, tracking devices or game controllers.
+
+Software, on the other hand, is the tool with which we instruct computers to perform tasks. Software programs can include Internet browsers, game systems, GPS technology, search engines or social network applications that are operable on a smartphone. Software design is highly complex and demands accuracy and precision.
+
+Robotics explores how computers interact with our world, seeking ways for computers to reproduce tasks performed by humans. Robotics specialists work closely with both hardware and software designers to create effective robots and explore their full potential.
+Degree Types
+
+The four core degree levels for computer science come with their own distinct possibilities upon graduation. The higher the degree level, the more senior the computer scientist, which can mean more research-intensive, academically grounded positions. Review brief depictions of each degree below.
+Associate
+
+An entry-level degree largely designed for students to get their bearing in the computer science field. Once an associate in computer science is earned, they can then pursue a bachelor’s, ideally with many core credits already earned. While full-time compsci positions are hard to acquire with an associate’s alone, the programming knowhow and fundamental skills taught at this level are an excellent introduction to the field. Particularly talented programmers may only need an associate’s to land a position, relying on their own affinities to fill in what a bachelor’s or graduate degree could teach them.
+Bachelor’s
+
+Bachelor’s in computer science programs require mathematics, physics and engineering classwork. There are a number of interdisciplinary specializations available for talented computer scientists, but students must first master programming, algorithms and network systems.
+Master’s
+
+Graduates may pursue a master’s in computer science, which imparts even more practical knowledge to its candidates. Generally two years in length, a master’s program provides a working knowledge of some of the most current applications in use.
+Ph.D.
+
+Computer scientists who are interested in research may opt to pursue a Ph.D. in computer science. Ph.D. programs delve deeply into computational theory and encourage students to innovate within the field. Students who complete the Ph.D. program, usually within 4 to 6 years after undergraduate school, are groomed for a career performing research projects and teaching.
+Ideal Candidates for Computer Science
+
+Computer scientists are generally logical thinkers and good problem-solvers. Creativity is also a necessary trait for developing innovative ideas, and an affinity for mathematics is definitely helpful. If you have these traits, along with good critical thinking skills and close attention to detail, computer science may be the field for you.
+
+It is important to note that computer scientists usually work in a collaborative environment; these positions do not entail working alone in front of a computer. Effective communications skills and the ability to function on a team are also essential.
+
+If the course curriculum and career possibilities for computer scientists appeal to you, you may be that special breed of mathematician and creative puzzle-solver that the industry requires. Research undergraduate degree programs in computer science, and consider scheduling a meeting with a professor or advisor to discuss a program in more depth. Research student affiliates of professional computer science networking groups, or consider taking part in a local computer science club to make contacts and explore the field.
+Career Pathways
+
+Computer scientists fresh out of an undergraduate program have several choices. The majority of these graduates accept an entry-level position in programming, software engineering or web development. Entry-level titles may include:
+
+    Systems Administrator
+    Software Developer
+    Software Engineer
+    Business Analyst
+    Network Engineer
+    Java or .NET Developer
+
+With a few years of experience, promotions to higher corporate positions can be expected. Computer scientists who prefer to remain in industry often choose this time to pursue a terminal master’s degree to hone their practical skills in computer science.
+
+Computer scientists who lean more towards research than practical application are sometimes able to attain an entry-level position in a research and development firm or software company, but graduate work is encouraged for significant advancement. Some researchers choose to spend their careers pursuing complex problem-solving that results in new products for the marketplace. Earning a PhD provides these computer scientists with the facilities and funding necessary for intense research.
+83 Courses
+
+    Affective Computing
+    View Course
+    Ambient Intelligence
+    View Course
+    An Introduction to Computer Networks
+    View Course
+    Applied Epidemiology Using R
+    View Course
+    Applied Multimedia
+    View Course
+    Artificial Intelligence
+    View Course
+    Atomistic Computer Modeling of Materials
+    View Course
+    Behavior of Algorithms
+    View Course
+    Bits
+    View Course
+    Building Dynamic Websites
+    View Course
+
+1 2 3 … 9 Next
+Get More Out of Your Online Computer Science Courses
+
+    Journals/Trade Magazines
+    Grants & Scholarships
+    Internships
+    Student & Professional Organizations
+
+Computer Science Journals & Trade Magazines
+
+    Journals
+        Computational Intelligence in Neuroscience
+
+        This open access journal features papers from the interdisciplinary field of neural computing, neural engineering and artificial intelligence.
+        Computer Engineering and Applications Journal
+
+        Published three times per year, this open access journal promotes articles covering all areas of the subject in computer engineering and application.
+        Computer Science and Information Systems
+
+        Original articles in this journal address theoretical foundations of computer science and commercial, industrial, or educational aspects.
+        International Journal of Artificial Intelligence & Applications
+
+        The IJAIA is a bi-monthly open access journal that publishes articles in all areas of artificial intelligence & applications.
+        International Journal of Information Security Science
+
+        International peer-reviewed journal of information security published by Gazi University in Ankara, Turkey.
+        International Journal of Intelligent Systems and Applications
+
+        IJISA shares high quality original research papers in intelligent systems and their applications.
+        Journal of Applied Computing and Information Technology
+
+        This open-access journal promotes applied computing papers primarily from New Zealand but welcomes quality international submissions.
+        Journal of Artificial Intelligence Research
+
+        This is one of the first electronic scientific journals, with research, survey, and technical pieces exploring all areas of artificial intelligence.
+        Journal of Information Security
+
+        The Journal of Information Security shares the latest advancements in information security.
+        The Computer Science Journal
+
+        This is an open access journal published by the AGH University of Science And Technology in Krakow, Poland.
+        The Open Artificial Intelligence Journal
+
+        Bentham publishes this open-access journal with articles about artificial intelligence.
+        The Theory of Computing
+
+        This open-access journal publishes research papers in theoretical computer science.
+
+Computer Science Grants & Scholarships
+
+    Scholarships
+        Adobe Systems Computer Science Scholarship
+
+        Deadline: February 1
+
+        Award Amount: $2,000
+
+        Female computer science students are eligible to win this scholarship, sponsored by the Society of Women Engineers and Adobe.
+        Betty Stevens Frecknall Scholarships
+
+        Deadline: May 31
+
+        Award Amount: varies
+
+        Active student members of the Association of Information Technology Professionals with a declared computer science or related major are eligible.
+        ESA Foundation Scholarship Program
+
+        Deadline: May 15
+
+        Award Amount: $3,000
+
+        This Entertainment Software Association scholarship was established for women and minorities studying computer and video game arts.
+        Gates Millenium Scholars
+
+        Deadline: varies
+
+        Award Amount: varies
+
+        Awarding 1000 scholarships each year, this foundation offers a broad range of scholarships including healthcare administration and management.
+        Google Anita Borg Memorial Scholarship
+
+        Deadline: February 28
+
+        Award Amount: $10,000
+
+        Outstanding female students in computer science or computer engineering programs can apply for this scholarship and retreat with Google.
+        STEM Majors Scholarship for Underserved Students
+
+        Deadline:
+
+        Award Amount: $3,000
+
+        Eligibility extended to science, technology, engineering, and math students attending a Historically Black College or University.
+        Stokes Educational Scholarship Program
+
+        Deadline: November 15
+
+        Award Amount: $30,000
+
+        Students awarded this scholarship work for the NSA while in school and after graduation and have up to $30,000 paid towards their education.
+        SWE Scholarships
+
+        Deadline: varies
+
+        Award Amount: varies
+
+        Database of scholarship sponsored by the Society of Women Engineers, intended for women studying engineering and computer science.
+        Wayne V. Black Memorial Scholarship
+
+        Deadline: January 21
+
+        Award Amount: $5,000
+
+        Eligibility extended to undergraduates studying engineering technology, computer science, pre-law, political science, or information technology.
+
+Computer Science Internships
+
+    Apple Internships
+
+    Deadline: year-round
+
+    There are various internship opportunities available for undergraduate and graduate students studying computer science and related fields.
+    Facebook Internships
+
+    Deadline: year-round
+
+    Social media giant, Facebook, offers a variety of internships at any given time for students majoring in computer science and related fields.
+    Google Freshman Engineering Practicum
+
+    Deadline: February 1
+
+    A competitive 12-week immersion program for freshmen majoring in computer science or electrical and computer engineering.
+    Google Sophomore Engineering Practicum
+
+    Deadline: October 15
+
+    A competitive 12-week immersion program for sophomores majoring in computer science or electrical and computer engineering.
+    Microsoft Internships
+
+    Deadline: year-round
+
+    Microsoft offers a variety of internship programs for students majoring in computer science and related fields.
+    NSA Computer Science Intern Program
+
+    Deadline: November 15
+
+    This 12-week, paid internship, open to students majoring in computer science, gives an “opportunity to apply your Computer Science skills to NSA systems.”
+
+Computer Science Student & Professional Organizations
+
+    Student Organizations
+        Association for Information Systems Student Chapters
+
+        Through membership in an AIS student chapter, IS students gain access to tools and resources that will help them succeed within this field.
+        Society for Industrial and Applied Mathematics - Students
+
+        Here students can find opportunities to participate in SIAM, as well as online resources on education and careers.
+        Student Association for Computing Machinery
+
+        Open to high school and undergraduate students, SACM provides free access to resources to help guide an education and career in computing machinery.
+        The Computing Research Association for Students
+
+        The CRA provides resources and tools necessary to educational growth of undergraduate and graduate students studying computer research.
+        Upsilon Pi Epsilon
+
+        Upsilon Pi Epsilon promotes the computing and information disciplines and to encourage their contribution to the enhancement of knowledge.
+    Professional Organizations
+        Association for Computing Machinery
+
+        ACM provides resources for computing professionals “that advance computing as a science and profession.”
+        Association for Information Systems
+
+        Striving for excellence in education and scholarship, members are leaders in “research, teaching, practice, and study of information systems worldwide.”
+        Association for the Advancement of Artificial Intelligence
+
+        The AAAI is devoted to advancing the scientific understanding of the mechanisms underlying thought and intelligent behavior and their embodiment in machines.
+        Computer Security Institute
+
+        The CSI provides the practical, yet often undiscovered, insight, strategies and trends that will protect your organization and move you ahead.
+        IEEE Computer Society
+
+        Providing “forums for top minds to come together”, IEEE strives to make information accessible in an on-demand world.
+        International Association of Comptuer Science and Information Technology
+
+        IACSIT  is a non-profit international scientific association of distinguished scholars engaged in Computer Science and Information Technology.
+        Society for Industrial and Applied Mathematics
+
+        SIAM fosters interactions between math, science, and technology communities through membership publications, conferences, and activities.
+        The Computing Research Association
+
+        CRA aims to enhance innovation by joining with industry, government and academia to strengthen research and advanced education in computing.
+
+Search for an item in libraries near you: Enter title, subject or author WorldCat.org >>
+
+    Universities
+    Playlists
+    Video Electives
+    FAQ
+    About & Contact
+    Advertise With Us
+    Advertising Policy
+    Sitemap
+    Online College Courses
+
+Twitter Facebook Pinterest
+
+©2019 Academic Earth | Privacy Policy | Terms of Service

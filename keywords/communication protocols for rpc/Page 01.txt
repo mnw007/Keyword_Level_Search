@@ -1,0 +1,82 @@
+ Ques10StudyExploreLogin
+Question: Communication protocols for RPC
+0
+This question appears in Mumbai University > Parallel And Distributed System subject
+
+Marks: 10 M
+
+Year: May 12
+
+mumbai universitycomputer engineeringparallel and distributed systemssem 8 • 5.9k views
+ADD COMMENT • link • 
+modified 2.9 years ago  •	written 2.9 years ago by
+gravatar for Sayali Bagwe Sayali Bagwe • 1.9k
+0
+Based on the needs of different systems, several communication protocols have been proposed for use in RPC which are mentioned below:
+
+i.The Request Protocol
+
+enter image description here
+
+This protocol is also called as R (request) protocol.
+It is used in RPC when a called procedure has nothing to return as a result of execution and the requirement of client confirmation about procedure execution is not needed.
+As no acknowledgement or reply message is involved, only single message is transmitted from client to server.
+The client proceeds after the request message is sent as there is no reply message.
+This protocol provides May-be call semantics and does not need retransmission of request messages.
+RPC that uses the R protocol is known as asynchronous RPC which helps to improve the combined performance of the client and server. This is done because the client does not ait for a reply and server does not need to send a reply.
+For an asynchronous RPC, the RPCRuntime does not retry a request in case of communication failure. TCP is better alternative then UDP since no retransmission is required and it is connection oriented.
+Asynchronous RPC with unreliable transport protocol are generally used in implementing periodic update services. Distributed system window is one of its applications.
+ii.The Request/Reply protocol
+
+enter image description here
+
+This protocol is also known as RR(request/reply) protocol.
+It is useful for designing systems which involve simple RPCs.
+In a simple RPC all the arguments and result fit in a single packet buffer while the call duration and intervals between calls are short.
+This protocol is based on the idea of using implicit acknowledgement to eliminate explicit acknowledgement messages.
+In this protocol a server reply is considered as an ACK for a clients request and a subsequent call from a client is considered as ACK of the client’s previous call.
+Timeout-and-retires technique is used with RR protocol for failure handling. Retransmission of request message is done when there is no response.
+RR protocol and timeout technique provides at-least-once call semantics on if duplicate requests are not filtered out.
+Exactly once semantics are supported by servers using reply cache which stores replies.
+iii.The Request/Reply/Acknowledgement-Reply Protocol
+
+enter image description here
+
+This protocol is also known as RRA (request/reply/acknowledge-reply) protocol.
+*
+*
+*
+@author: Mohit Nainwal
+*
+*
+*RR protocol implements exactly once semantics which requires storage of a lot of information in the server cache and can lead to loss of replies that have not been delivered.
+To overcome the limitations or RR protocol, RSA protocol is used.
+In this clients acknowledge the receipt of reply messages and the server deletes information from its cache only after it receives an acknowledgement from client.
+Sometimes the reply acknowledgement message may get lost therefore RRA protocol needs a unique ordered message identifiers. This keeps a track of the acknowledgement series sent.
+ADD COMMENT • link
+written 2.9 years ago by
+gravatar for Sayali Bagwe Sayali Bagwe • 1.9k
+Please log in to add an answer.
+Recommended
+ 
+
+Similar posts • Search »
+Nothing matches yet.
+ 
+Get it on Google Play
+Engineering in your pocket
+Download our mobile app and study on-the-go. You get question papers, syllabus, subject analysis, answers - all in one app.
+
+COMPANY
+About Us
+Community
+Blog
+CONTENT
+Question Papers
+Books
+Topics
+HELP
+Refund
+Policy
+Latest
+Privacy & Terms Contact Us    

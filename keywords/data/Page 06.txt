@@ -1,0 +1,12 @@
+data noun, plural in form but singular or plural in construction, often attributive
+
+Definition of data
+
+1 : factual information (such as measurements or statistics) used as a basis for reasoning, discussion, or calculation the data is plentiful and easily available— H. A. Gleason, Jr. comprehensive data on economic growth have been published— N. H. Jacoby
+2 : information in digital form that can be transmitted or processed
+3 : information output by a sensing device or organ that includes both useful and irrelevant or redundant information and must be processed to be meaningful
+Is data singular or plural?: Usage Guide
+
+Data leads a life of its own quite independent of datum, of which it was originally the plural. It occurs in two constructions: as a plural noun (like earnings), taking a plural verb and plural modifiers (such as these, many, a few) but not cardinal numbers, and serving as a referent for plural pronouns (such as they, them); and as an abstract mass noun (like information), taking a singular verb and singular modifiers (such as this, much, little), and being referred to by a singular pronoun (it). Both constructions are standard. The plural construction is more common in print, evidently because the house style of several publishers mandates it.
+Examples of data in a Sentence
+Smith, himself a stay-at-home dad and a journalist, mixes accessible summaries of social-science data with anecdotes drawn from interviews with couples in which the men have chosen, or have been compelled by economic circumstance, to become primary caregivers to their children. — Eduardo M. Pealver, Commonweal, 11 Sept. 2009 He plays Chuck Bartowski, a computer-tech expert with the Buy More store's Nerd Herd … who unwittingly becomes a secret agent when government data is downloaded to his brain. — Michael Logan, TV Guide, September 10-16, 2007

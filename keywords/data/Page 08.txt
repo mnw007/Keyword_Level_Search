@@ -1,0 +1,74 @@
+
+Data
+Definition - What does Data mean?
+
+Data, in the context of computing, refers to distinct pieces of digital information. Data is usually formatted in a specific way and can exist in a variety of forms, such as numbers, text, etc. When used in the context of transmission media, data refers to information in binary digital format.
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager
+Techopedia explains Data
+
+Data is a broad term in computer technology, but it is often used to identify and separate information from mere bits.
+
+In telecommunications, data often refers to digital, rather than analog, information. Unlike analog transmissions, which require a hard-line connection for the duration of a transmission, digital data is sent in packets.
+Share this:
+Related Terms
+
+    Data Modeling
+    Database (DB)
+    Data Packet
+    Digital Data
+    Analog Data
+    Database Column
+    Data Mart
+    Data Services
+    Data Cleansing
+    Data-ism
+
+Techopedia - Where IT and Business Meet
+Tech moves fast! Stay ahead of the curve with Techopedia!
+
+Join nearly 200,000 subscribers who receive actionable tech insights from Techopedia.
+Related Articles
+Mainframes Aren't Dead
+Mainframes Aren't Dead
+Web Roundup: Big Data Is Winning the Hearts of Children, Lovers and Lawyers
+Web Roundup: Big Data Is Winning the Hearts of Children, Lovers and Lawyers
+What Is Hadoop Exactly? A Cynic's Theory
+What Is Hadoop Exactly? A Cynic's Theory
+The 6 Things You Need to Get World-Changing Results with Data
+The 6 Things You Need to Get World-Changing Results with Data
+5 Big Privacy Problems That Come With Big Data
+5 Big Privacy Problems That Come With Big Data
+Data Breach Notification: The Legal and Regulatory Environment
+Data Breach Notification: The Legal and Regulatory Environment
++ View More Articles
+Featured Q&A
+
+    What is the difference between little endian and big endian data formats?
+    What is the difference between a mobile OS and a computer OS?
+    Can mobile phones be tracked?
+
+More of your questions answered by our Experts
+Related Tags
+IT Business
+Computer Science
+Data
+Communication
+Resources
+FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager FREE WEBINAR | How to Continuously Monitor and Analyze MySQL and MariaDB with IDERA's SQL Diagnostic Manager:
+Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily. Techopedia Resources | Browse Industry Leading Software Used by Techopedia Staff and Users Daily.:
+New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices New Whitepaper: Best Ways to Extend Endpoint Management and Security to Mobile Devices:
+Complimentary Webinar - Getting Control of Your BYOD Program with UEM Complimentary Webinar - Getting Control of Your BYOD Program with UEM:
+Systems Monitoring for Dummies Systems Monitoring for Dummies:
+What's really going on in that Cisco ASA of yours? What's really going on in that Cisco ASA of yours?:
+E-Book: Compliance is Not Enough: Planning a Complete Security Strategy E-Book: Compliance is Not Enough: Planning a Complete Security Strategy:
+Latest Articles
+Big Data Silos: What They Are and How to Deal With Them
+Big Data Silos: What They Are and How to Deal With Them
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+6 Tech Trends That Could Be a Thing in 2019 ... Or Not
+How AI Can Help Tackle Climate Change
+How AI Can Help Tackle Climate Change
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+Hacking Wearable Tech: The Potential Danger of Advancing Wearable Technology
+Job Role: Software Engineer
+Job Role: Software Engineer

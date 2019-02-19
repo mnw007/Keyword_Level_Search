@@ -1,0 +1,190 @@
+*
+*
+*
+@author: Mohit Nainwal
+*
+*
+*SPECIAL OFFER Save up to 70% on the Best of 2018. Shop now.
+Home > Articles > Security > Network Security
+
+Security Review of Protocols: The Upper Layers
+By Steven M. Bellovin, William R. Cheswick, Aviel D. Rubin
+May 16, 2003
+📄 Contents
+
+␡
+Messaging
+Internet Telephony
+RPC-Based Protocols
+File Transfer Protocols
+Remote Login
+Simple Network Management Protocol—SNMP
+The Network Time Protocol
+Information Services
+Proprietary Protocols
+Peer-to-Peer Networking
+The X11 Window System
+The Small Services
+⎙ Print + Share This
+< Back Page 3 of 12 Next >
+This chapter is from the book
+Firewalls and Internet Security: Repelling the Wily Hacker, 2nd EditionFirewalls and Internet Security: Repelling the Wily Hacker, 2nd Edition 
+
+Learn More Buy
+3.3 RPC-Based Protocols
+3.3.1 RPC and Rpcbind
+Sun's Remote Procedure Call (RPC) protocol [Srinivasan, 1995; Sun Microsystems, 1990] underlies a few important services. Unfortunately, many of these services represent potential security problems. RPC is used today on many different platforms, including most of Microsoft's operating systems. A thorough understanding of RPC is vital.
+
+The basic concept is simple enough. The person creating a network service uses a special language to specify the names of the external entry points and their parameters. A precompiler converts this specification into stub or glue routines for the client and server modules. With the help of this glue and a bit of boilerplate, the client can make seemingly ordinary subroutine calls to a remote server. Most of the difficulties of network programming are masked by the RPC layer.
+
+RPC can live on top of either TCP or UDP. Most of the essential characteristics of the transport mechanisms show through. Thus, a subsystem that uses RPC over UDP must still worry about lost messages, duplicates, out-of-order messages, and so on. However, record boundaries are inserted in the TCP-based version.
+
+RPC messages begin with their own header. It includes the program number, the procedure number denoting the entry point within the procedure, and some version numbers. Any attempt to filter RPC messages must be keyed on these fields. The header also includes a sequence number, which is used to match queries with replies.
+
+There is also an authentication area. A null authentication variant can be used for anonymous services. For more serious services, the so-called UNIX authentication field is included. This includes the numeric user-id and group-id of the caller, and the name of the calling machine. Great care must be taken here! The machine name should never be trusted (and important services, such as older versions of NFS, ignore it in favor of the IP address), and neither the user-id nor the group-id are worth anything at all unless the message is from a privileged port on a UNIX host. Indeed, even then they are worth little with UDP-based RPC; forging a source address is trivial in that case. Never take any serious action based on such a message.
+
+RPC does support some forms of cryptographic authentication. Older versions use DES, the Data Encryption Standard [NBS, 1977]. All calls are authenticated using a shared session key (see Chapter 18). The session keys are distributed using Diffie-Hellman exponential key exchange (see and Section 18.4.6.) This is a much more secure, much more scalable mechanism, and it is used for current versions of NFS [Eisler, 1999].
+
+Diffie and Hellman, 1976] or Chapter 18), though Sun's original version wasn't strong enough
+
+LaMacchia and Odlyzko, 1991] to resist a sophisticated attacker.	More recent versions use Kerberos (see Section 18.1) via GSS-API (see [Eisler et al., 1997]
+
+OSF's Distributed Computing Environment (DCE) uses DES-authenticated RPC, but with Kerberos as a key distribution mechanism [Rosenberry et al., 1992]. DCE also provides access control lists for authorization.
+
+With either type of authentication, a host is expected to cache the authentication data. Future messages may include a pointer to the cache entry, rather than the full field. This should be borne in mind when attempting to analyze or filter RPC messages.
+
+The remainder of an RPC message consists of the parameters to (or results of) the particular procedure invoked. These (and the headers) are encoded using the External Data Representation (XDR) protocol [Sun Microsystems, 1987]. XDR does not include explicit tags; it is thus impossible to decode—and hence filter—without knowledge of the application.
+
+With the notable exception of NFS, RPC-based servers do not normally use fixed port numbers. They accept whatever port number the operating system assigns them, and register this assignment with rpcbind (known on some systems as the portmapper). Those servers that need privileged ports pick and register unassigned, low-numbered ones. Rpcbind—which itself uses the RPC protocol for communication—acts as an intermediary between RPC clients and servers. To contact a server, the client first asks rpcbind on the server's host for the port number and protocol (UDP or TCP) of the service. This information is then used for the actual RPC call.
+
+Rpcbind has other abilities that are less benign. For example, there is a call to unregister a service, fine fodder for denial-of-service attacks, as it is not well authenticated. Rpcbind is also happy to tell anyone on the network what services you are running (see Figure 3.1); this is extremely useful when developing attacks. (We have seen captured hacker log files that show many such dumps, courtesy of the standard rpcinfo command.)
+
+Figure 3.1Figure 3.1: A rpcbind dump. It shows the services that are being run, the version number, and the port number on which they live. Even though the program name has been changed to rpcbind, the RPC service name is still portmapper. Note that many of the port numbers are greater than 1024.
+
+
+The most serious problem with rpcbind is its ability to issue indirect calls. To avoid the overhead of the extra round-trip necessary to determine the real port number, a client can ask that rpcbind forward the RPC call to the actual server. But the forwarded message must carry rpcbind's own return address. It is thus impossible for the applications to distinguish the message from a genuinely local request, and thus to assess the level of trust that should be accorded to the call.
+
+Some versions of rpcbind will do their own filtering. If yours will not, make sure that no outsiders can talk to it. But remember that blocking access to rpcbind will not block direct access to the services themselves; it's very easy for an attacker to scan the port number space directly.
+
+Even without rpcbind-induced problems, older RPC services have had a checkered security history. Most were written with only local Ethernet connectivity in mind, and therefore are insuf-ficiently cautious. For example, some window systems used RPC-based servers for cut-and-paste operations and for passing file references between applications. But outsiders were able to abuse this ability to obtain copies of any files on the system. There have been other problems as well, such as buffer overflows and the like. It is worth a great deal of effort to block RPC calls from the outside.
+
+3.3.2 NIS
+One dangerous RPC application is the Network Information Service (NIS), formerly known as YP. (The service was originally known as Yellow Pages, but that name infringed phone company trademarks in the United Kingdom.) NIS is used to distribute a variety of important databases from a central server to its clients. These include the password file, the host address table, and the public and private key databases used for Secure RPC. Access can be by search key, or the entire file can be transferred.
+
+If you are suitably cautious (read: "sufficiently paranoid"), your hackles should be rising by now. Many of the risks are obvious. An intruder who obtains your password file has a precious thing indeed. The key database can be almost as good; private keys for individual users are generally encrypted with their login passwords. But it gets worse.
+
+Consider a security-conscious site that uses a shadow password file. Such a file holds the actual hashed passwords, which are not visible to anyone on the local machine. But all systems need some mechanism to check passwords; if NIS is used, the shadow password file is served up to anyone who appears—over the network—to be root on a trusted machine. In other words, if one workstation is corrupted, the shadow password file offers no protection.
+
+NIS clients need to know about backup servers, in case the master is down. In some versions, clients can be told—remotely—to use a different, and possibly fraudulent, NIS server. This server could supply bogus /etc/passwd file entries, incorrect host addresses, and so on.
+
+Some versions of NIS can be configured to disallow the most dangerous activities. Obviously, you should do this if possible. Better still, do not run NIS on exposed machines; the risks are high, and—for gateway machines—the benefits very low.
+
+3.3.3 NFS
+The Network File System (NFS) [Shepler et al., 2000; Sun Microsystems, 1990], originally developed by Sun Microsystems, is now supported on most computers. It is a vital component of most workstations, and it is not likely to go away any time soon.
+
+For robustness, NFS is based on RPC, UDP, and stateless servers. That is, to the NFS server—the host that generally has the real disk storage—each request stands alone; no context is retained. Thus, all operations must be authenticated individually. This can pose some problems, as you shall see.
+
+To make NFS access robust in the face of system reboots and network partitioning, NFS clients retain state; the servers do not. The basic tool is the file handle, a unique string that identifies each file or directory on the disk. All NFS requests are specified in terms of a file handle, an operation, and whatever parameters are necessary for that operation. Requests that grant access to new files, such as open, return a new handle to the client process. File handles are not interpreted by the client. The server creates them with sufficient structure for its own needs; most file handles include a random component as well.
+
+The initial handle for the root directory of a file system is obtained at mount time. In older implementations, the server's mount daemon—an RPC-based service—checked the client's host name and requested file system against an administrator-supplied list, and verified the mode of operation (read-only versus read/write). If all was well, the file handle for the root directory of the file system was passed back to the client.
+
+Note carefully the implications of this. Any client that retains a root file handle has permanent access to that file system. Although standard client software renegotiates access at each mount time, which is typically at reboot time, there is no enforceable requirement that it do so. Thus, NFS's mount-based access controls are quite inadequate. For that reason, GSS-API-based NFS servers are supposed to check access rights on each operation [Eisler, 1999].
+
+File handles are normally assigned at file system creation time, via a pseudorandom number generator. (Some older versions of NFS used an insufficiently random—and hence predictable—seed for this process. Reports indicate that successful guessing attacks have indeed taken place.) New handles can be written only to an unmounted file system, using the fsirand command. Prior to doing this, any clients that have the file system mounted should unmount it, lest they receive the dreaded "stale file handle" error. It is this constraint—coordinating the activities of the server and its myriad clients—that makes it so difficult to revoke access. NFS is too robust!
+
+Some UNIX file system operations, such as file or record locks, require that the server retain state, despite the architecture of NFS. These operations are implemented by auxiliary processes using RPC. Servers also use such mechanisms to keep track of clients that have mounted their file systems. As we have seen, this data need not be consistent with reality; and it is not, in fact, used by the system for anything important.
+
+NFS generally relies on a set of numeric user and group identifiers that must be consistent across the set of machines being served. While this is convenient for local use, it is not a solution that scales. Some implementations provide for a map function. NFS access by root is generally prohibited, a restriction that often leads to more frustration than protection.
+
+Normally, NFS servers live on port 2049. The choice of port number is problematic, as it is in the "unprivileged" range, and hence is in the range assignable to ordinary processes. Packet filters that permit UDP conversations must be configured to block inbound access to 2049; the service is too dangerous. Furthermore, some versions of NFS live on random ports, with rpcbind providing addressing information.
+
+NFS poses risks to client machines as well. Someone with privileged access to the server machine—or someone who can forge reply packets—can create setuid programs or device files, and then invoke or open them from the client. Some NFS clients have options to disallow import of such things; make sure you use them if you mount file systems from untrusted sources.
+
+A more subtle problem with browsing archives via NFS is that it's too easy for the server machine to plant booby-trapped versions of certain programs likely to be used, such as ls. If the user's $PATH has the current directory first, the phony version will be used, rather than the client's own ls command. This is always poor practice: If the current directory appears in the path, it should always be the last entry. The NFS best defense here would be for the client to delete the "execute" bit on all imported files (though not directories). Unfortunately, we do not know of any standard NFS clients that provide this option.
+
+Many sites are now using version 3. Its most notable attribute (for our purposes) is support for transport over TCP. That makes authentication much easier.
+
+3.3.4 Andrew
+The Andrew File System (AFS) [Howard, 1988; Kazar, 1988] is another network file system that can, to some extent, interoperate with NFS. Its major purpose is to provide a single scalable, global, location-independent file system to an organization, or even to the Internet as a whole. AFS enables files to live on any server within the network, with caching occurring transparently, and as needed.
+
+AFS uses Kerberos authentication [Bryant, 1988; Kohl and Neuman, 1993; Miller et al., 1987; Steiner et al., 1988], which is described further in Chapter 18, and a Kerberos-based user identifier mapping scheme. It thus provides a considerably higher degree of safety than do simpler versions of NFS. That notwithstanding, there have been security problems with some earlier versions of AFS. Those have now been corrected; see, for example, [Honeyman et al., 1992].
+
+< Back Page 3 of 12 Next >
++ Share This 🔖 Save To Your Account
+Related Resources
+StoreArticlesBlogs
+ CompTIA PenTest+ Cert Guide
+CompTIA PenTest+ Cert Guide
+By Omar Santos, Ron Taylor
+Book $43.99
+ Computer Security: Art and Science
+Computer Security: Art and Science, 2nd Edition
+By Matt Bishop
+eBook (Watermarked) $63.99
+ Computer Security
+Computer Security, 2nd Edition
+By Matt Bishop
+Book $79.99
+See All Related Store Items
+
+the trusted technology learning source View Your Cart Join|Sign In 
+Store
+Business & Management
+Certification
+Cloud Computing & Virtualization
+Data
+Digital Photography
+Engineering
+Graphics & Web Design
+Home & Office Computing
+Information Technology
+Mobile Application Development & Programming
+Networking
+Open Source
+Operating Systems, Server
+Programming
+Security
+Software Development & Management
+Web Development
+Web Services
+Formats
+Books
+eBooks
+Practice Tests
+Software
+Video
+Web Editions
+Deals & Promotions
+Video Training
+Safari
+Imprints
+Addison-Wesley Professional
+Adobe Press
+Cisco Press
+FT Press
+IBM Press
+Microsoft Press Store
+Peachpit
+Pearson IT Certification
+Prentice Hall Professional
+Que Publishing
+Sams Publishing
+VMware Press
+Explore
+About
+Affiliate Program
+Authors
+Chapters & Articles
+Contact Us
+Deals & Promotions
+Popular Topics
+Product Registration
+Special Offers & Newsletter
+Video Training
+Community
+Press and Media Relations
+Product Review Team
+User Groups
+AboutAffiliatesContact UsFAQLegal NoticeOrdering InformationPrivacy NoticePressPromotionsSite MapWrite for Us
+© 2019 Pearson Education, Informit. All rights reserved.
+221 River Street, Hoboken, NJ 07030

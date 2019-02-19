@@ -1,0 +1,282 @@
+studytonight.com
+Tutorials 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q & A Forum
+Tests
+HTML Course
+Curious NEW
+Sign in
+      
+WRITE
+FOR US!
+C LANGUAGE
+  PRACTICE TESTS →
+Basics of C Language
+Overview of C
+Features of C
+My First C program
+Compile and Run C program
+C Syntax Rules
+Keywords and Identifier
+Operators in C Language
+Data Types in C
+Variables in C
+C Input / Output
+Decision Making
+Switch Statement
+Looping
+Arrays
+string and character array
+Storage classes
+Functions in C
+Introduction to Functions
+Types of Functions and Recursion
+Types of Function calls
+Passing Array to function
+Structures in C
+All about Structures
+Typedef
+Unions
+Pointers in C
+Pointers concept
+Declaring and initializing pointer
+Pointer to Pointer
+Pointer to Array
+Pointer to Structure
+Pointer Arithmetic
+Pointer with Functions
+Advanced Topics in C
+File Input / Output
+Error Handling
+Dynamic memory allocation
+Command line argument
+C Programs
+100+ C Programs with explanation and output
+Dynamic Memory Allocation in C
+The process of allocating memory at runtime is known as dynamic memory allocation. Library routines known as memory management functions are used for allocating and freeing memory during execution of a program. These functions are defined in stdlib.h header file.
+
+Function	Description
+malloc()	allocates requested size of bytes and returns a void pointer pointing to the first byte of the allocated space
+calloc()	allocates space for an array of elements, initialize them to zero and then returns a void pointer to the memory
+free	releases previously allocated memory
+realloc	modify the size of previously allocated space
+Memory Allocation Process
+Global variables, static variables and program instructions get their memory in permanent storage area whereas local variables are stored in a memory area called Stack.
+
+The memory space between these two region is known as Heap area. This region is used for dynamic memory allocation during execution of the program. The size of heap keep changing.
+
+dynamic memory allocation in c
+
+Allocating block of Memory
+malloc() function is used for allocating block of memory at runtime. This function reserves a block of memory of the given size and returns a pointer of type void. This means that we can assign it to any type of pointer using typecasting. If it fails to allocate enough space as specified, it returns a NULL pointer.
+
+Syntax:
+
+void* malloc(byte-size)
+Time for an Example: malloc()
+int *x;
+x = (int*)malloc(50 * sizeof(int));     //memory space allocated to variable x
+free(x);    //releases the memory allocated to variable x
+
+calloc() is another memory allocation function that is used for allocating memory at runtime. calloc function is normally used for allocating memory to derived data types such as arrays and structures. If it fails to allocate enough space as specified, it returns a NULL pointer.
+
+Syntax:
+
+void *calloc(number of items, element-size)
+Time for an Example: calloc()
+struct employee
+{
+    char *name;
+    int salary;
+};
+typedef struct employee emp;
+emp *e1;
+e1 = (emp*)calloc(30,sizeof(emp));
+
+realloc() changes memory size that is already allocated dynamically to a variable.
+
+Syntax:
+
+void* realloc(pointer, new-size)
+Time for an Example: realloc()
+int *x;
+x = (int*)malloc(50 * sizeof(int));
+x = (int*)realloc(x,100);   //allocated a new memory to variable x
+Diffrence between malloc() and calloc()
+calloc()	malloc()
+calloc() initializes the allocated memory with 0 value.	malloc() initializes the allocated memory with garbage values.
+Number of arguments is 2	Number of argument is 1
+Syntax :
+
+(cast_type *)calloc(blocks , size_of_block);
+
+Syntax :
+
+(cast_type *)malloc(Size_in_bytes);
+
+Program to represent Dynamic Memory Allocation(using calloc())
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i, n;
+    int *element;
+
+    printf("Enter total number of elements: ");
+    scanf("%d", &n);
+
+    /*
+        returns a void pointer(which is type-casted to int*)
+        pointing to the first block of the allocated space
+    */
+    element = (int*) calloc(n,sizeof(int)); 
+    
+    /*
+        If it fails to allocate enough space as specified, 
+        it returns a NULL pointer.
+    */
+    if(element == NULL) 
+    {
+        printf("Error.Not enough space available");
+        exit(0);
+    }
+
+    for(i = 0; i < n; i++)
+    {
+        /*
+            storing elements from the user 
+            in the allocated space
+        */
+       scanf("%d", element+i); 
+    }
+    for(i = 1; i < n; i++)
+    {
+       if(*element > *(element+i))
+       {
+            *element = *(element+i);
+        }
+    }
+
+    printf("Smallest element is %d", *element);
+
+    return 0;
+}
+
+Enter total number of elements: 5
+4 2 1 5 3
+Smallest element is 1
+
+← Prev Next →
+  
+
+What is Studytonight?
+
+About Us
+
+Authors
+
+Collaborate
+
+Testimonials
+
+Contact Us
+
+Suggest
+
+Tutorials
+
+Android
+
+Core Java
+
+C++
+
+Data Structures
+
+Python
+
+Network Programming
+
+DBMS & SQL
+
+Servlet
+
+More...
+
+Tests
+
+Core Java
+
+Android
+
+C++
+
+DBMS
+
+C Language
+
+GATE 2019
+
+More...
+
+Learn to Code
+
+HTML
+
+CSS
+
+Website Development
+
+
+Interview Questions
+
+Java Interview Question
+
+C++ Interview Question
+
+OS Interview Question
+
+DBMS Interview Question
+
+More...
+
+
+         
+
+© 2019 Studytonight.   All rights reserved.
+
+ DMCA.com Protection Status

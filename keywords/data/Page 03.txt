@@ -1,0 +1,28 @@
+Data is distinct pieces of information, usually formatted in a special way. All software is divided into two general categories: data and programs. Programs are collections of instructions for manipulating data.
+
+Data can exist in a variety of forms — as numbers or text on pieces of paper, as bits and bytes stored in electronic memory, or as facts stored in a person's mind. Since the mid-1900s, people have used the word data to mean computer information that is transmitted or stored.
+
+Strictly speaking, data is the plural of datum, a single piece of information. In practice, however, people use data as both the singular and plural form of the word, and as a mass noun (like "sand").
+Machine Readable Information
+
+The term data is often used to distinguish binary machine-readable information from textual human-readable information. For example, some applications make a distinction between data files (files that contain binary data) and text files (files that contain ASCII data).
+
+Also important to know is that in database management systems (DBMS), data files are the files that store the database information, whereas other files, such as index files and data dictionaries, store administrative information, known as metadata.
+
+Recommended Reading: Metadata: Data About Data.
+Data Phrases in Technology
+
+As technology advances and changes, numerous phrases have been used over the years to describe data and how we use and analyze it, including structured and unstructured data, massive volumes of data is now called Big Data, while older phrases, like data integrity or data mining are still widely used today.
+
+The following 10 data-related definitions will help you to better understand the data and its role in information technology. Click each phrase to read the full Webopedia definition:
+
+    Big Data: A massive volume of both structured and unstructured data that is so large it is difficult to process using traditional database and software techniques.
+    Big Data Analytics: The process of collecting, organizing and analyzing large sets of data to discover patterns and other useful information.
+    Data Center: Physical or virtual infrastructure used by enterprises to house computer, server and networking systems and components for the company's information technology (IT) needs.
+    Data Integrity: Refers to the validity of data. Data integrity can be compromised in a number of ways, such as human data entry errors or errors that occur during data transmission.
+    Data Miner: A software application that monitors and/or analyzes the activities of a computer, and subsequently its user, of the purpose of collecting information.
+    Data Mining: A class of database applications that look for hidden patterns in a group of data that can be used to predict future behavior.
+    Database: A database is basically a collection of information organized in such a way that a computer program can quickly select desired pieces of data.
+    Raw Data: Information that has been collected but not formatted or analyzed.
+    Structured Data: Structured data refers to any data that resides in a fixed field within a record or file. This includes data contained in relational databases and spreadsheets.
+    Unstructured Data: Information that doesn't reside in a traditional row-column database. As you might expect, it's the opposite of structured data.

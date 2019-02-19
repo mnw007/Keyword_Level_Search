@@ -1,0 +1,301 @@
+
+Python Logo
+
+    Java C Tutorial C++ Kotlin Swift R Tutorial 
+
+    home
+    Python
+    Examples
+    Built-in Functions
+    Quiz
+
+search
+Learn Python Programming
+The Definitive Guide
+
+Python is a powerful high-level, object-oriented programming language created by Guido van Rossum.
+
+It has simple easy-to-use syntax, making it the perfect language for someone trying to learn computer programming for the first time.
+
+This is a comprehensive guide on how to get started in Python, why you should learn it and how you can learn it. However, if you knowledge of other programming languages and want to quickly get started with Python, visit Python tutorial page.
+Table of Contents
+
+    Python Tutorials
+    About Python Programming
+    Reasons to Learn Python
+    Run Python in Your Computer
+    Your First Python Program
+    Recommended Python Books
+
+What is Python (Programming)? - The Basics
+
+https://www.programiz.com/
+
+Before getting started, lets get familiarized with the language first.
+
+Python is a general-purpose language. It has wide range of applications from Web development (like: Django and Bottle), scientific and mathematical computing (Orange, SymPy, NumPy) to desktop graphical user Interfaces (Pygame, Panda3D).
+
+The syntax of the language is clean and length of the code is relatively short. It's fun to work in Python because it allows you to think about the problem rather than focusing on the syntax.
+
+More information on Python Language:
+History of Python
+Features of Python Programming
+Applications of Python
+
+ 
+Reasons to Choose Python as First Language
+
+https://www.programiz.com/
+
+    Simple Elegant Syntax
+
+    Programming in Python is fun. It's easier to understand and write Python code. Why? The syntax feels natural. Take this source code for an example:
+
+    a = 2
+    b = 3
+    sum = a + b
+    print(sum)
+
+
+    Even if you have never programmed before, you can easily guess that this program adds two numbers and prints it.
+    Not overly strict
+
+    You don't need to define the type of a variable in Python. Also, it's not necessary to add semicolon at the end of the statement.
+
+    Python enforces you to follow good practices (like proper indentation). These small things can make learning much easier for beginners.
+    Expressiveness of the language
+
+    Python allows you to write programs having greater functionality with fewer lines of code. Here's a link to the source code of Tic-tac-toe game with a graphical interface and a smart computer opponent in less than 500 lines of code. This is just an example. You will be amazed how much you can do with Python once you learn the basics.
+    Great Community and Support
+
+    Python has a large supporting community. There are numerous active forums online which can be handy if you are stuck. Some of them are:
+        Learn Python subreddit
+        Google Forum for Python
+        Python Questions - Stack Overflow
+
+Run Python on Your Operating System
+
+https://www.programiz.com/
+
+You will find the easiest way to run Python on your computer (Windows, Mac OS X or Linux) in this section.
+Install and Run Python in Mac OS X
+Install and Run Python in Linux (Ubuntu)
+Install and Run Python in Windows
+
+    Go to Download Python page on the official site and click Download Python 3.6.0 (You may see different version name).
+    When the download is completed, double-click the file and follow the instructions to install it.
+    When Python is installed, a program called IDLE is also installed along with it. It provides graphical user interface to work with Python.
+    Open IDLE, copy the following code below and press enter.
+
+    print("Hello, World!")
+
+    To create a file in IDLE, go to File > New Window (Shortcut: Ctrl+N).
+    Write Python code (you can copy the code below for now) and save (Shortcut: Ctrl+S) with .py file extension like: hello.py or your-first-program.py
+
+    print("Hello, World!")
+
+    Go to Run > Run module (Shortcut: F5) and you can see the output. Congratulations, you've successfully run your first Python program.
+
+ 
+Your First Python Program
+
+https://www.programiz.com/
+
+Often, a program called "Hello, World!" is used to introduce a new programming language to beginners. A "Hello, World!" is a simple program that outputs "Hello, World!".
+
+However, Python is one of the easiest language to learn, and creating "Hello, World!" program is as simple as writing print("Hello, World!"). So, we are going to write a different program.
+Program to Add Two Numbers
+
+    script.py
+    IPython Shell
+
+Powered by DataCamp
+How this program works?
+
+Line 1: # Add two numbers
+
+Any line starting with # in Python programming is a comment.
+
+Comments are used in programming to describe the purpose of the code. This helps you as well as other programmers to understand the intent of the code. Comments are completely ignored by compilers and interpreters.
+
+Line 2: num1 = 3
+
+Here, num1 is a variable. You can store a value in a variable. Here, 3 is stored in this variable.
+
+Line 3: num2 = 5
+
+Similarly, 5 is stored in num2 variable.
+
+Line 4: sum = num1+num2
+
+The variables num1 and num2 are added using + operator. The result of addition is then stored in another variable sum.
+
+Line 5: print(sum)
+
+The print() function prints the output to the screen. In our case, it prints 8 on the screen.
+Few Important Things to Remember
+
+To represent a statement in Python, newline (enter) is used. The use of semicolon at the end of the statement is optional (unlike languages like C/C++, PHP). In fact, it's recommended to omit semicolon at the end of the statement in Python.
+
+Instead of curly braces { }, indentations are used to represent a block.
+
+   im_a_parent:
+    im_a_child:
+        im_a_grand_child
+    im_another_child:
+        im_another_grand_child
+
+Teach Yourself to Code in Python
+
+https://www.programiz.com/
+
+Learn Python from Programiz
+
+Programiz offers dozens of Python tutorials and examples to help you learn Python programming from scratch.
+
+Our tutorials are designed for beginners who do not have any prior knowledge of Python (or, any other programming languages). Each tutorial is written in depth with examples and detailed explanation.
+
+We also encourage you to try our examples and run it. Once you understand the program, modify it and try to create something new. This is the best way to learn programming.
+Recommended Books
+
+If you are serious about learning programming, you should get yourself a good book.
+
+Granted, reading a programming book takes a lot of time and patience. But, you will get the big picture of programming concepts in the book which you may not find elsewhere.
+Think Python: How to Think Like a Computer Scientist
+
+If you have never programmed before, this book is for you. This book assumes that you have very little knowledge of programming and will provide everything you need to get started with Python.
+
+Don't skip the exercises provided in each chapter.
+
+Think Python Book
+Get this book
+Starting out With Python
+
+A well-written book with a lot of examples.
+
+This book is easy to understand even for complete beginners. Since, the content is well organized, it's a good book to have for future reference.
+
+Starting out with Python
+Get this book
+Effective Python: 59 Specific Ways to Write Better Python
+
+Python is easy to get started with. However, there are many awesome features you may not be aware of, and hidden pitfalls you want to avoid.
+
+"Effective Python" helps you to utilize the power of Python in the right way. Want to write robust, efficient and maintainable code in Python? You should definitely give this book a try.
+
+Effective Python Book
+Get this book
+Final Words
+
+Python is a terrific language. The syntax is simple and code length is short which makes is easy to understand and write.
+
+If you are getting started in programming, Python is an awesome choice. You will be amazed how much you can do in Python once you know the basics.
+
+It's easy to overlook the fact that Python is a powerful language. Not only is it good for learning programming, it's also a good language to have in your arsenal. Change your idea into a prototype or create games or get started with data Science, Python can help you in everything to get started.
+Python Tutorials
+Introduction
+
+    Getting Started
+    Keywords & Identifiers
+    Statements & Comments
+    Python Variables
+    Python Datatypes
+    Python Type Conversion
+    Python I/O and Import
+    Python Operators
+    Python Namespace
+
+Flow Control
+
+    Python if...else
+    Python for Loop
+    while Loop
+    break and continue
+    Pass Statement
+    Looping Technique
+
+Functions
+
+    Python Function
+    Function Argument
+    Python Recursion
+    Anonymous Function
+    Python Global, Local and Nonlocal
+    Python Global Keyword
+    Python Modules
+    Python Package
+
+Datatypes
+
+    Python Numbers
+    Python List
+    Python Tuple
+    Python String
+    Python Set
+    Python Dictionary
+    Python Nested Dictionary
+    Python Arrays
+    Python Matrix
+    List Comprehension
+
+File Handling
+
+    File Operation
+    Python Directory
+    Python Exception
+    Exception Handling
+    User-defined Exception
+
+Object & Class
+
+    Python OOP
+    Python Class
+    Python Inheritance
+    Multiple Inheritance
+    Operator Overloading
+
+Additional Tutorials
+
+    Iterators
+    Generators
+    Closures
+    Decorators
+    Shallow and Deep Copy
+    @property
+    Python Assert
+
+Get latest updates, articles and tutorials on Python programming.
+
+Get Latest Updates on Programiz
+tutorials
+
+    Python Tutorials
+    C Tutorials
+    Java Tutorials
+    Kotlin Tutorials
+    C++ Tutorials
+    Swift Tutorials
+    R Tutorials
+    Algorithms Tutorials
+
+examples
+
+    Python Examples
+    C Examples
+    Java Examples
+    Kotlin Examples
+    C++ Examples
+    R Examples
+
+company
+
+    About
+    Advertising
+    Contact
+
+legal
+
+    Privacy Policy
+    Terms and Conditions
+
+Copyright © Parewa Labs Pvt. Ltd. All rights reserved.

@@ -1,0 +1,325 @@
+
+C dynamic memory allocation
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+C standard library
+General topics
+Data types
+Character classification
+Strings
+Mathematics
+File input/output
+Date/time
+Localization
+Memory allocation
+Process control
+Signals
+Alternative tokens
+Miscellaneous headers
+<assert.h>
+<errno.h>
+<setjmp.h>
+<stdarg.h>
+vte
+C dynamic memory allocation refers to performing manual memory management for dynamic memory allocation in the C programming language via a group of functions in the C standard library, namely malloc, realloc, calloc and free.[1][2][3]
+
+The C++ programming language includes these functions; however, the operators new and delete provide similar functionality and are recommended by that language's authors.[4] Still, there are a myriad of situations in which using new/delete is not applicable, such as garbage collection code or performance-sensitive code, and a combination of malloc and placement new may be required instead of the higher-level new operator.
+
+Many different implementations of the actual memory allocation mechanism, used by malloc, are available. Their performance varies in both execution time and required memory.
+
+
+Contents
+1	Rationale
+2	Overview of functions
+2.1	Differences between malloc() and calloc()
+3	Usage example
+4	Type safety
+4.1	Advantages to casting
+4.2	Disadvantages to casting
+5	Common errors
+6	Implementations
+6.1	Heap-based
+6.2	dlmalloc
+6.3	FreeBSD's and NetBSD's jemalloc
+6.4	OpenBSD's malloc
+6.5	Hoard malloc
+6.6	Thread-caching malloc (tcmalloc)
+6.7	In-kernel
+7	Overriding malloc
+8	Allocation size limits
+9	Extensions and alternatives
+10	See also
+11	References
+12	External links
+Rationale
+The C programming language manages memory statically, automatically, or dynamically. Static-duration variables are allocated in main memory, usually along with the executable code of the program, and persist for the lifetime of the program; automatic-duration variables are allocated on the stack and come and go as functions are called and return. For static-duration and automatic-duration variables, the size of the allocation must be compile-time constant (except for the case of variable-length automatic arrays[5]). If the required size is not known until run-time (for example, if data of arbitrary size is being read from the user or from a disk file), then using fixed-size data objects is inadequate.
+
+The lifetime of allocated memory can also cause concern. Neither static- nor automatic-duration memory is adequate for all situations. Automatic-allocated data cannot persist across multiple function calls, while static data persists for the life of the program whether it is needed or not. In many situations the programmer requires greater flexibility in managing the lifetime of allocated memory.
+
+These limitations are avoided by using dynamic memory allocation in which memory is more explicitly (but more flexibly) managed, typically, by allocating it from the free store (informally called the "heap"), an area of memory structured for this purpose. In C, the library function malloc is used to allocate a block of memory on the heap. The program accesses this block of memory via a pointer that malloc returns. When the memory is no longer needed, the pointer is passed to free which deallocates the memory so that it can be used for other purposes.
+
+Some platforms provide library calls which allow run-time dynamic allocation from the C stack rather than the heap (e.g. alloca()[6]). This memory is automatically freed when the calling function ends.
+
+Overview of functions
+The C dynamic memory allocation functions are defined in stdlib.h header (cstdlib header in C++).[1]
+
+Function	Description
+malloc	allocates the specified number of bytes
+realloc	increases or decreases the size of the specified block of memory, moving it if necessary
+calloc	allocates the specified number of bytes and initializes them to zero
+free	releases the specified block of memory back to the system
+Differences between malloc() and calloc()
+malloc() takes a single argument (the amount of memory to allocate in bytes), while calloc() needs two arguments (the number of variables to allocate in memory, and the size in bytes of a single variable).
+malloc() does not initialize the memory allocated, while calloc() guarantees that all bytes of the allocated memory block have been initialized to 0.
+Usage example
+Creating an array of ten integers with automatic scope is straightforward in C:
+
+int array[10];
+However, the size of the array is fixed at compile time. If one wishes to allocate a similar array dynamically, the following code can be used:
+
+int * array = malloc(10 * sizeof(int));
+This computes the number of bytes that ten integers occupy in memory, then requests that many bytes from malloc and assigns the result to a pointer named array (due to C syntax, pointers and arrays can be used interchangeably in some situations).
+
+Because malloc might not be able to service the request, it might return a null pointer and it is good programming practice to check for this:
+
+int * array = malloc(10 * sizeof(int));
+if (array == NULL) {
+  fprintf(stderr, "malloc failed\n");
+  return(-1);
+}
+When the program no longer needs the dynamic array, it must eventually call free to return the memory it occupies to the free store:
+
+free(array);
+The memory set aside by malloc is not initialized and may contain cruft: the remnants of previously used and discarded data. After allocation with malloc, elements of the array are uninitialized variables. The command calloc will return an allocation that has already been cleared:
+
+int * array = calloc(10, sizeof (int));
+With realloc we can resize the amount of memory a pointer points to. For example, if we have a pointer acting as an array of size {\displaystyle n} n and we want to change it to an array of size {\displaystyle m} m, we can use realloc.
+
+int * arr = malloc(2 * sizeof(int));
+arr[0] = 1;
+arr[1] = 2;
+arr = realloc(arr, 3 * sizeof(int));
+arr[2] = 3;
+Note that realloc must be assumed to have changed the base address of the block (i.e. if it has failed to extend the size of the original block, and has therefore allocated a new larger block elsewhere and copied the old contents into it). Therefore, any pointers to addresses within the original block are also no longer valid.
+
+Type safety
+malloc returns a void pointer (void *), which indicates that it is a pointer to a region of unknown data type. The use of casting is required in C++ due to the strong type system, whereas this is not the case in C. The lack of a specific pointer type returned from malloc is type-unsafe behaviour according to some programmers: malloc allocates based on byte count but not on type. This is different from the C++ new operator that returns a pointer whose type relies on the operand. (See C Type Safety.)
+
+One may "cast" (see type conversion) this pointer to a specific type:
+
+int * ptr;
+ptr = malloc(10 * sizeof(int));		/* without a cast */
+ptr = (int *)malloc(10 * sizeof(int));	/* with a cast */
+There are advantages and disadvantages to performing such a cast.
+
+Advantages to casting
+Including the cast may allow a C program or function to compile as C++.
+The cast allows for pre-1989 versions of malloc that originally returned a char *.[7]
+Casting can help the developer identify inconsistencies in type sizing should the destination pointer type change, particularly if the pointer is declared far from the malloc() call (although modern compilers and static analysers can warn on such behaviour without requiring the cast[8]).
+Disadvantages to casting
+Under the C standard, the cast is redundant.
+Adding the cast may mask failure to include the header stdlib.h, in which the function prototype for malloc is found.[7][9] In the absence of a prototype for malloc, the C90 standard requires that the C compiler assume malloc returns an int. If there is no cast, C90 requires a diagnostic when this integer is assigned to the pointer; however, with the cast, this diagnostic would not be produced, hiding a bug. On certain architectures and data models (such as LP64 on 64-bit systems, where long and pointers are 64-bit and int is 32-bit), this error can actually result in undefined behaviour, as the implicitly declared malloc returns a 32-bit value whereas the actually defined function returns a 64-bit value. Depending on calling conventions and memory layout, this may result in stack smashing. This issue is less likely to go unnoticed in modern compilers, as C99 does not permit implicit declarations, so the compiler must produce a diagnostic even if it does assume int return.
+If the type of the pointer is changed at its declaration, one may also need to change all lines where malloc is called and cast.
+Common errors
+
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (March 2015) (Learn how and when to remove this template message)
+The improper use of dynamic memory allocation can frequently be a source of bugs. These can include security bugs or program crashes, most often due to segmentation faults.
+
+Most common errors are as follows:[10]
+
+Not checking for allocation failures
+Memory allocation is not guaranteed to succeed, and may instead return a null pointer. Using the returned value, without checking if the allocation is successful, invokes undefined behavior. This usually leads to crash (due to the resulting segmentation fault on the null pointer dereference), but there is no guarantee that a crash will happen so relying on that can also lead to problems.
+Memory leaks
+Failure to deallocate memory using free leads to buildup of non-reusable memory, which is no longer used by the program. This wastes memory resources and can lead to allocation failures when these resources are exhausted.
+Logical errors
+All allocations must follow the same pattern: allocation using malloc, usage to store data, deallocation using free. Failures to adhere to this pattern, such as memory usage after a call to free (dangling pointer) or before a call to malloc (wild pointer), calling free twice ("double free"), etc., usually causes a segmentation fault and results in a crash of the program. These errors can be transient and hard to debug – for example, freed memory is usually not immediately reclaimed by the OS, and thus dangling pointers may persist for a while and appear to work.
+Implementations
+The implementation of memory management depends greatly upon operating system and architecture. Some operating systems supply an allocator for malloc, while others supply functions to control certain regions of data. The same dynamic memory allocator is often used to implement both malloc and the operator new in C++.[11]
+
+Heap-based
+See also: sbrk
+Implementation of the allocator is commonly done using the heap, or data segment. The allocator will usually expand and contract the heap to fulfill allocation requests.
+
+The heap method suffers from a few inherent flaws, stemming entirely from fragmentation. Like any method of memory allocation, the heap will become fragmented; that is, there will be sections of used and unused memory in the allocated space on the heap. A good allocator will attempt to find an unused area of already allocated memory to use before resorting to expanding the heap. The major problem with this method is that the heap has only two significant attributes: base, or the beginning of the heap in virtual memory space; and length, or its size. The heap requires enough system memory to fill its entire length, and its base can never change. Thus, any large areas of unused memory are wasted. The heap can get "stuck" in this position if a small used segment exists at the end of the heap, which could waste any amount of address space. On lazy memory allocation schemes, such as those often found in the Linux operating system, a large heap does not necessarily reserve the equivalent system memory; it will only do so at the first write time (reads of non-mapped memory pages return zero). The granularity of this depends on page size.
+
+
+dlmalloc
+Doug Lea has developed dlmalloc ("Doug Lea's Malloc") as a general-purpose allocator, starting in 1987. The GNU C library (glibc) uses ptmalloc,[12] an allocator based on dlmalloc.[13]
+
+Memory on the heap is allocated as "chunks", an 8-byte aligned data structure which contains a header, and usable memory. Allocated memory contains an 8 or 16 byte overhead for the size of the chunk and usage flags. Unallocated chunks also store pointers to other free chunks in the usable space area, making the minimum chunk size 24 bytes.[13]
+
+Unallocated memory is grouped into "bins" of similar sizes, implemented by using a double-linked list of chunks (with pointers stored in the unallocated space inside the chunk).[13]
+
+For requests below 256 bytes (a "smallbin" request), a simple two power best fit allocator is used. If there are no free blocks in that bin, a block from the next highest bin is split in two.
+
+For requests of 256 bytes or above but below the mmap threshold, recent versions of dlmalloc use an in-place bitwise trie algorithm. If there is no free space left to satisfy the request, dlmalloc tries to increase the size of the heap, usually via the brk system call.
+
+For requests above the mmap threshold (a "largebin" request), the memory is always allocated using the mmap system call. The threshold is usually 256 KB.[14] The mmap method averts problems with huge buffers trapping a small allocation at the end after their expiration, but always allocates an entire page of memory, which on many architectures is 4096 bytes in size.[15]
+
+
+FreeBSD's and NetBSD's jemalloc
+Since FreeBSD 7.0 and NetBSD 5.0, the old malloc implementation (phkmalloc) was replaced by jemalloc, written by Jason Evans. The main reason for this was a lack of scalability of phkmalloc in terms of multithreading. In order to avoid lock contention, jemalloc uses separate "arenas" for each CPU. Experiments measuring number of allocations per second in multithreading application have shown that this makes it scale linearly with the number of threads, while for both phkmalloc and dlmalloc performance was inversely proportional to the number of threads.[16]
+
+
+OpenBSD's malloc
+OpenBSD's implementation of the malloc function makes use of mmap. For requests greater in size than one page, the entire allocation is retrieved using mmap; smaller sizes are assigned from memory pools maintained by malloc within a number of "bucket pages," also allocated with mmap.[17][better source needed] On a call to free, memory is released and unmapped from the process address space using munmap. This system is designed to improve security by taking advantage of the address space layout randomization and gap page features implemented as part of OpenBSD's mmap system call, and to detect use-after-free bugs—as a large memory allocation is completely unmapped after it is freed, further use causes a segmentation fault and termination of the program.
+
+
+Hoard malloc
+Main article: Hoard memory allocator
+Hoard is an allocator whose goal is scalable memory allocation performance. Like OpenBSD's allocator, Hoard uses mmap exclusively, but manages memory in chunks of 64 kilobytes called superblocks. Hoard's heap is logically divided into a single global heap and a number of per-processor heaps. In addition, there is a thread-local cache that can hold a limited number of superblocks. By allocating only from superblocks on the local per-thread or per-processor heap, and moving mostly-empty superblocks to the global heap so they can be reused by other processors, Hoard keeps fragmentation low while achieving near linear scalability with the number of threads.[18]
+
+
+Thread-caching malloc (tcmalloc)
+Every thread has local storage for small allocations. For large allocations mmap or sbrk can be used. TCMalloc, a malloc developed by Google,[19] has garbage-collection for local storage of dead threads. The TCMalloc is considered to be more than twice as fast as glibc's ptmalloc for multithreaded programs.[20][21]
+
+In-kernel
+Operating system kernels need to allocate memory just as application programs do. The implementation of malloc within a kernel often differs significantly from the implementations used by C libraries, however. For example, memory buffers might need to conform to special restrictions imposed by DMA, or the memory allocation function might be called from interrupt context.[22] This necessitates a malloc implementation tightly integrated with the virtual memory subsystem of the operating system kernel.
+
+Overriding malloc
+Because malloc and its relatives can have a strong impact on the performance of a program, it is not uncommon to override the functions for a specific application by custom implementations that are optimized for application's allocation patterns. The C standard provides no way of doing this, but operating systems have found various ways to do this by exploiting dynamic linking. One way is to simply link in a different library to override the symbols. Another, employed by Unix System V.3, is to make malloc and free function pointers that an application can reset to custom functions.[23]
+
+Allocation size limits
+The largest possible memory block malloc can allocate depends on the host system, particularly the size of physical memory and the operating system implementation. Theoretically, the largest number should be the maximum value that can be held in a size_t type, which is an implementation-dependent unsigned integer representing the size of an area of memory. In the C99 standard and later, it is available as the SIZE_MAX constant from <stdint.h>. Although not guaranteed by ISO C, it is usually 2CHAR_BIT × sizeof(size_t) − 1.
+
+Extensions and alternatives
+The C library implementations shipping with various operating systems and compilers may come with alternatives and extensions to the standard malloc package. Notable among these is:
+
+alloca, which allocates a requested number of bytes on the call stack. No corresponding deallocation function exists, as typically the memory is deallocated as soon as the calling function returns. alloca was present on Unix systems as early as 32/V (1978), but its use can be problematic in some (e.g., embedded) contexts.[24] While supported by many compilers, it is not part of the ANSI-C standard and therefore may not always be portable. It may also cause minor performance problems: it leads to variable-size stack frames, so that both stack and frame pointers need to be managed (with fixed-size stack frames, one of these is redundant).[25] Larger allocations may also increase the risk of undefined behavior due to a stack overflow.[26] C99 offered variable-length arrays as an alternative stack allocation mechanism - however, this feature was relegated to optional in the later C11 standard.
+POSIX defines a function posix_memalign that allocates memory with caller-specified alignment. Its allocations are deallocated with free.[27]
+See also
+Buffer overflow
+Memory debugger
+Memory protection
+Page size
+Variable-length array
+References
+ ISO/IEC 9899:1999 specification (PDF). p. 313, § 7.20.3 "Memory management functions".
+ Godse, Atul P.; Godse, Deepali A. (2008). Advanced C Programming. p. 6-28: Technical Publications. p. 400. ISBN 978-81-8431-496-0.
+ Summit, Steve. "C Programming Notes - Chapter 11: Memory Allocation". Retrieved 30 October 2011.
+ Stroustrup, Bjarne (2008). Programming: Principles and Practice Using C++. 1009, §27.4 Free store: Addison Wesley. p. 1236. ISBN 978-0-321-54372-1.
+ "gcc manual". gnu.org. Retrieved 14 December 2008.
+ "alloca". Man.freebsd.org. 5 September 2006. Retrieved 18 September 2011.
+ "Casting malloc". Cprogramming.com. Retrieved 9 March 2007.
+ "clang: lib/StaticAnalyzer/Checkers/MallocSizeofChecker.cpp Source File". clang.llvm.org. Retrieved 1 April 2018.
+ "comp.lang.c FAQ list · Question 7.7b". C-FAQ. Retrieved 9 March 2007.
+ Reek, Kenneth (1997-08-04). Pointers on C (1 ed.). Pearson. ISBN 9780673999863.
+ Alexandrescu, Andrei (2001). Modern C++ Design: Generic Programming and Design Patterns Applied. Addison-Wesley. p. 78.
+ "Wolfram Gloger's malloc homepage". malloc.de. Retrieved 1 April 2018.
+ Kaempf, Michel (2001). "Vudo malloc tricks". Phrack (57): 8. Archived from the original on 22 January 2009. Retrieved 29 April 2009.
+ "Malloc Tunable Parameters". GNU. Retrieved 2 May 2009.
+ Sanderson, Bruce (12 December 2004). "RAM, Virtual Memory, Pagefile and all that stuff". Microsoft Help and Support.
+ Evans, Jason (16 April 2006). "A Scalable Concurrent malloc(3) Implementation for FreeBSD" (PDF). Retrieved 18 March 2012.
+ "libc/stdlib/malloc.c". BSD Cross Reference, OpenBSD src/lib/.
+ Berger, E. D.; McKinley, K. S.; Blumofe, R. D.; Wilson, P. R. (November 2000). Hoard: A Scalable Memory Allocator for Multithreaded Applications (PDF). ASPLOS-IX. Proceedings of the ninth international conference on Architectural support for programming languages and operating systems. pp. 117–128. CiteSeerX 10.1.1.1.4174. doi:10.1145/378993.379232. ISBN 1-58113-317-0.
+ TCMalloc homepage
+ Ghemawat, Sanjay; Menage, Paul; TCMalloc : Thread-Caching Malloc
+ Callaghan, Mark (18 January 2009). "High Availability MySQL: Double sysbench throughput with TCMalloc". Mysqlha.blogspot.com. Retrieved 18 September 2011.
+ "kmalloc()/kfree() include/linux/slab.h". People.netfilter.org. Retrieved 18 September 2011.
+ Shared libraries.
+ "Why is the use of alloca() not considered good practice?". stackoverflow.com. Retrieved 2016-01-05.
+ Amarasinghe, Saman; Leiserson, Charles (2010). "6.172 Performance Engineering of Software Systems, Lecture 10". MIT OpenCourseWare. Massachusetts Institute of Technology. Retrieved 27 January 2015.
+ "alloca(3) - Linux manual page". man7.org. Retrieved 2016-01-05.
+ posix_memalign – System Interfaces Reference, The Single UNIX Specification, Issue 7 from The Open Group
+External links
+	The Wikibook C Programming has a page on the topic of: C Programming/C Reference
+	Wikiversity has learning resources about C/Memory_Management
+Definition of malloc in IEEE Std 1003.1 standard
+Lea, Doug; The design of the basis of the glibc allocator
+Gloger, Wolfram; The ptmalloc homepage
+Berger, Emery; The Hoard homepage
+Douglas, Niall; The nedmalloc homepage
+Evans, Jason; The jemalloc homepage
+Simple Memory Allocation Algorithms on OSDEV Community
+Michael, Maged M.; Scalable Lock-Free Dynamic Memory Allocation
+Bartlett, Jonathan; Inside memory management - The choices, tradeoffs, and implementations of dynamic allocation
+Memory Reduction (GNOME) wiki page with lots of information about fixing malloc
+C99 standard draft, including TC1/TC2/TC3
+Some useful references about C
+ISO/IEC 9899 – Programming languages – C
+Understanding glibc malloc
+vte
+Memory management
+Memory management as a function of an operating system
+Manual memory management	
+Static memory allocation C dynamic memory allocation new and delete (C++)
+Virtual memory	
+Demand paging Page table Paging Virtual memory compression
+Hardware	
+Memory management unit Translation lookaside buffer
+Garbage collection	
+Boehm garbage collector Concurrent mark sweep collector Finalizer Garbage Garbage-first collector Mark-compact algorithm Reference counting Tracing garbage collection Strong reference Weak reference
+Memory segmentation	
+Protected mode Real mode Virtual 8086 mode x86 memory segmentation
+Memory safety	
+Buffer overflow Buffer over-read Dangling pointer Stack overflow
+Issues	
+Fragmentation Memory leak Unreachable memory
+Other	
+Automatic variable International Symposium on Memory Management Region-based memory management
+vte
+C programming language
+ANSI C C89 and C90 C99 C11 C18 Embedded C MISRA C
+Features	
+Functions Header files Libraries Operators String Syntax Preprocessor Data types
+Standard library
+functions	
+Char (ctype.h) File I/O (stdio.h) Math (math.h) Dynamic memory (stdlib.h) String (string.h) Time (time.h) Variadic (stdarg.h) POSIX
+Standard
+libraries	
+Bionic libhybris dietlibc EGLIBC glibc klibc Microsoft Run-time Library musl Newlib uClibc BSD libc
+Compilers	
+Comparison of compilers ACK Borland Turbo C Clang GCC ICC LCC PCC SDCC TCC Microsoft Visual Studio / Express / C++ Watcom C/C++
+IDEs	
+Comparison of IDEs Anjuta Code::Blocks CodeLite Eclipse Geany Microsoft Visual Studio NetBeans
+Comparison with
+other languages	
+Compatibility of C and C++ Comparison with Embedded C Comparison with Pascal Comparison of programming languages
+Descendant
+languages	
+C++ C# D Objective-C Alef Limbo Go Vala
+Category Category
+Categories: Memory managementMemory management softwareC standard libraryC++
+Navigation menu
+Not logged inTalkContributionsCreate accountLog inArticleTalkReadEditView historySearch
+
+Main page
+Contents
+Featured content
+Current events
+Random article
+Donate to Wikipedia
+Wikipedia store
+Interaction
+Help
+About Wikipedia
+Community portal
+Recent changes
+Contact page
+Tools
+What links here
+Related changes
+Upload file
+Special pages
+Permanent link
+Page information
+Wikidata item
+Cite this page
+Print/export
+Create a book
+Download as PDF
+Printable version
+
+Languages
+Español
+Français
+한국어
+日本語
+Português
+Русский
+中文
+5 more
+Edit links
+This page was last edited on 26 November 2018, at 20:22 (UTC).
+Text is available under the Creative Commons Attribution-ShareAlike License; additional terms may apply. By using this site, you agree to the Terms of Use and Privacy Policy. Wikipedia® is a registered trademark of the Wikimedia Foundation, Inc., a non-profit organization.
+Privacy policyAbout WikipediaDisclaimersContact WikipediaDevelopersCookie statementMobile viewWikimedia Foundation Powered by MediaWiki
